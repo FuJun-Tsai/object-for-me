@@ -1,0 +1,371 @@
+body{
+    background-image: url("./pic/eff.png");
+    background-color: black;
+    background-position: 70% 0%;
+
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+
+h2{
+    padding-bottom: 0;
+    
+}
+
+.back{
+    /* background-color: #383A3F; */
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 100px;
+    
+}
+
+.daytime{
+    margin: 20px auto;
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 50px;
+    
+}
+
+label{
+    font-size: 24px;
+
+}
+
+option{
+    color: black;
+    
+}
+
+.bookwindow{
+    position: relative;
+    width: 1200px;
+    height: 700px;
+    border: 1px solid black;
+    /* margin: 20px auto ; */
+    margin: 20px auto ;
+
+    overflow: hidden;
+
+    background-image: url("./pic/keith-misner-h0Vxgz5tyXA-unsplash.jpg");
+    background-size: contain;
+
+}
+
+.bookwindow button{
+    position: absolute;
+
+}
+
+.bookwindow div{
+    position: absolute;
+
+}
+
+.bookwindow div button:first-child(){
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%,50%);
+    border-radius:0 ;  
+
+}
+
+.bookwindow div button:nth-child(n+2){
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50% ;
+
+}
+
+P.remark{
+    font-size: 16px;
+
+}
+
+select ,input[type="text"] ,input[type="date"] {
+    width: 300px;
+    margin-bottom: 10px;
+    color: black;
+    font-size: 24px;
+
+}
+
+/* ========================================================== */
+
+/* 吧檯 */
+
+.Ablock{
+    top: 0;
+    right: 4%;
+    width: 54%;
+    height: 29%;
+        
+}
+
+.A{
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 75%;
+    border-radius: 0 0 50px 0;
+
+}
+
+.A1 , .A2{
+    right: 0;
+}
+
+.A1{
+    top: 5%;
+}
+
+.A2{
+    top: 35%;
+}
+
+.A3 , .A4 , .A5 , .A6 , .A7 , .A8 , .A9{
+    bottom: 0;
+}
+
+.A3{
+    right: 20%;
+}
+
+.A4{
+    right: 32%;
+}
+
+.A5{
+    right: 44%;
+}
+
+.A6{
+    right: 56%;
+}
+
+.A7{
+    right: 68%;
+}
+
+.A8{
+    right: 80%;
+}
+
+.A9{
+    right: 92%;
+}
+
+/* /吧檯 */
+/* ========================================================== */
+/* 方桌 */
+
+.block{
+    width:30%;
+    height:30%;
+    
+}
+
+.b{
+    width: 42%;
+    height: 75%;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%,50%);
+
+}
+
+.b1{
+    top: 20%;
+    right: 10%;
+
+}
+
+.b2{
+    bottom: 20%;
+    right: 10%;
+
+}
+
+.b3{
+    top: 20%;
+    left: 10%;
+    
+}
+
+.b4{
+    bottom: 20%;
+    left: 10%;
+
+}
+
+/* /方桌 */
+/* ========================================================= */
+/* 位置 */
+
+    /* 水平 */
+    .B , .C{
+        right: 0;
+
+    }
+
+    .D , .E{
+        right: 30%;
+
+    }
+
+    .F , .G{
+        left: 10%;
+
+    }
+    /* /水平 */
+
+    /* 垂直 */
+    .B , .D{
+        bottom: 35%;
+
+    }
+
+    .C , .E{
+        bottom: 0px;
+
+    }
+
+    .F{
+        bottom: 60%;
+
+    }
+
+    .G{
+        bottom: 15%;
+
+    }
+    /* /垂直 */
+
+    /* 旋轉 */
+    .F , .G{
+        transform: rotate(-30deg);
+
+    }
+
+    /* /旋轉 */
+
+/* /All */
+/* ========================================================= */
+/* 舞台 */
+
+    .show{
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        border: 1px solid black;
+        border-radius: 50%;
+        background-color: black;
+        
+        bottom: 180px;
+        transform: translate(-50% , 0);
+        
+    }
+
+    .show p{
+        color: white;
+        font-size: 48px;
+        width: 48px;
+        height: 96px;
+        position: absolute;
+        right: 25%;
+        bottom: 50%;
+        transform: translate(25% , 50%);
+
+    }
+
+/* /舞台 */
+/* ========================================================= */
+/* result */
+
+    .result{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 0;
+        width: 300px;
+        background-color: hsla(0,0%,30%,1);
+        position: fixed;
+        right: 0;
+        top:50%;
+        transform: translate(0%,-50%);
+        transition-duration: .5s;
+        border-radius: 8px 0 0 8px;
+
+
+        
+    }
+
+    .btn_drawer{
+        content: "";
+        position: absolute;
+        background: none;
+        background-color: hsla(0,0%,30%,1);
+        transform: translate(-100%,0);
+        color: hsla(28, 25.5%, 80%, 1);
+        text-shadow: 4px 4px 8px hsla(0, 0%, 0%, .7);
+
+
+        height: auto;
+        border-radius: 8px 0 0 8px;
+        outline: none;
+        
+        width: 32px;
+        padding: 4px;
+        border: none;
+
+    }
+
+    .result div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        margin: 0 auto;
+    }
+
+    .result p ,.result label{
+        font-size: 24px;
+        padding: 4px;
+
+    }
+
+    .result input{
+        background-color: #515151;
+        outline: none;
+        border: 0;
+        border-bottom: 1px solid white;
+        text-align: center;
+        font-size: 16px;
+
+    }
+
+    input[type="submit"]{
+        width: 100px; 
+        margin: 0 auto;
+        display: block;
+        font-size: 24px;
+        background-color: black;
+        border-radius: 24px;
+        
+    }
+
+    div.result.-open{
+        transform: translate(100%, -50%);
+
+      }
+    
+/* result */
+/* ========================================================= */
+/*  RWD */
+      
+

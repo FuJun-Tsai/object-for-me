@@ -1,0 +1,242 @@
+*{
+    box-sizing: border-box;
+    color: #FFEEE4;
+    margin: 0;
+    padding: 0;
+    font-family:Comic Sans MS,Microsoft JhengHei;
+    /* text-shadow: 4px 4px 8px hsla(0, 0%, 0%, .7); */
+    color: #FFEEE4;
+
+}                                                    
+
+body{
+    /* background-color: #262626; */
+
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    padding: 0 20px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: #383A3F;
+    z-index: 30;
+    font-size: 0;
+
+
+}
+
+/* 文字設定集 */
+h1{
+    font-size: 4rem;
+    padding: 100px 0;
+    text-shadow: 4px 4px 12px black;
+  
+}
+
+h2{
+    font-size: 3.5rem;
+    padding: 100px 0;
+    text-shadow: 4px 4px 12px black;
+
+   
+}
+
+h3{
+    color: #FFB366;
+    font-size: 3rem;
+    text-shadow: 4px 4px 12px black;
+
+}
+
+h4{
+    color: #FFB366;
+    font-size: 2rem;
+    text-shadow: 4px 4px 12px black;
+
+}
+
+h5{
+    font-size: 4rem;
+    text-align: center;
+    padding: 100px 0;
+    text-shadow: 4px 4px 12px black;
+
+}
+
+h6{
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 4px 4px 12px black;
+
+}
+
+P{
+    font-size: 24px;
+    text-shadow: 4px 4px 8px hsla(0, 0%, 0%, .7);
+
+}
+
+button{
+    border-radius: 8px;
+    font-size: 24px;
+    padding: 0px 20px ;
+    color:hsla(0,53.4%,22.7%,1);
+    background-color: hsla(28,25.5%,80%,1);
+    font-weight: bold;    
+
+}
+
+    /* 訂餐系底下鈕 */
+    .bookingbutton{
+        margin: 100px 0;
+        margin-left: 50%;
+        transform: translate(-50%,0);
+        
+    }
+    /* /訂餐系底下鈕 */
+
+/* /文字設定集 */
+
+ul{
+    list-style: none;
+
+}
+
+nav{
+    border-bottom: 1px solid;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+a{
+    text-decoration: none;
+
+}
+
+.maintitle{
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    
+}
+
+.rowlogo{
+    height: 100px;
+
+}
+
+.maintitle li{
+    padding: 0 20px;
+    font-size: 32px;
+
+}
+
+.maintitle li>a{
+    padding: 20px;
+
+}
+
+/* 導覽列主次標 */
+.sub{
+    position: relative;
+
+}
+
+.extra{
+    display: none;
+    position: absolute;
+    width: 100px;
+    background-color: #383A3F;
+    border: 1px solid;
+    
+}
+
+.extra li{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+    
+}
+
+.extra li a{
+    padding: 5px ;
+    font-size: 24px;
+    color: #FFB366;
+
+}
+
+.sub:hover .extra{
+    display: inline-block;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%,1px);
+
+}
+/* /導覽列主次標 */
+
+@media screen and (max-width:575px){
+
+    .maintitle{
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        left: 0;
+        top: 100px;
+
+    }
+
+    li.grid{
+        display: none;
+
+    }
+
+}
+
+@media screen and (max-width:767px) and (min-width:576px){
+
+    .maintitle{
+        display: none;
+
+    }
+
+}
+
+@media screen and (max-width:992px) and (min-width:768px){
+
+    .maintitle{
+        display: none;
+
+    }
+
+}
+
+@media screen and (max-width:1200px) and (min-width:991px){
+
+    header{
+        width: 100%;
+
+    }
+
+    .maintitle{
+        /* display: none; */
+        position: absolute;
+        flex-direction: column;
+        left: 0;
+        top: 100px;
+
+
+    }
+
+    li.grid{
+        display: none;
+
+    }
+
+}

@@ -1,0 +1,68 @@
+.back{
+    background-color: black;
+    background-image: url("./pic/eff.png");
+    padding-top: 100px;
+
+}
+
+.product{
+    width: 1200px;
+    margin: 0 auto;
+
+    position: relative;
+
+}
+
+.page{
+    position: absolute;
+    top: 0;
+    transform: translate(0,-100%);
+
+}
+
+.first{
+    left: 10%;
+
+}
+
+.second{
+    left: 20%;
+
+}
+
+.third{
+    left: 30%;
+
+}
+
+.here{
+    color: #FFB366;
+    background-color: gray;
+    border-radius: 8px;
+    padding: 0 4px;
+}
+
+.hide{
+    color: hsla(28,25.5%,80%,1);
+    background-color: #383A3F;
+    border-radius: 8px;
+    padding: 0 4px;
+
+}
+
+.productlayout{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 10px;
+
+}
+
+.productlayout div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+
+}
+

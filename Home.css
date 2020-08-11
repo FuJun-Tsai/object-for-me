@@ -1,0 +1,272 @@
+body{
+    background-image: url("./pic/keith-misner-h0Vxgz5tyXA-unsplash.jpg");
+
+}
+
+/* banner */
+
+.banner{
+    background-image: url("./pic/oleg-ivanov-ILybAzFjn5c-unsplash.jpg");
+    position: relative;
+    height: 100vh;
+    background-position: 0 100px;
+
+}
+
+.slogan{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    z-index: 29;
+    transform: translate(-10%,-50%);
+
+}
+
+.slogan p{
+    font-size: 48px;
+
+}
+
+.slogan span{
+    color: #FFB366;
+    
+}
+
+/* /banner */
+
+.show{
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    
+}
+
+/* singer */
+
+.singer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.singer_list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0;
+
+
+}
+
+.singer_text{
+    position: relative;
+    background-color: hsla(0,0%,0%,.7);
+    padding: 16px;
+    border-radius: 24px;
+    padding-bottom: 64px;
+
+}
+
+.singer_text button{
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+
+}
+
+/* /singer */
+
+/* band */
+
+.band{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.band_detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0;
+
+}
+
+.band_text{
+    position: relative;
+    background-color: hsla(0,0%,0%,.7);
+    padding: 16px;
+    border-radius: 24px;
+    padding-bottom: 64px;
+
+}
+
+.band_text button{
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+
+}
+
+/* /band */
+
+.meal_back{
+    background-image: url("./pic/背景拷貝2.png");
+    background-attachment: fixed;
+    padding-bottom: 100px;
+
+}
+
+.meal_layout{
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+/* drink */
+
+.drink{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.drink_detail{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0;
+    width: 100%;
+
+}
+
+.drink_text{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    border: 1px solid black;
+    padding: 16px;
+    padding-bottom: 40px;
+
+
+}
+
+.drink_text button{
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+
+}
+
+/* /drink */
+
+/* food */
+
+.food{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.food_detail{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0;
+    width: 100%;
+
+}
+
+.food_text{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 83%;
+    padding: 16px;
+    padding-bottom: 32px;
+
+}
+
+.food_text button{
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+
+}
+
+/* /food */
+
+@media screen and (max-width:575px){
+
+    .slogan p{
+        font-size: 24px;
+        
+    }
+
+    .banner{
+        width: 575px;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+    }
+
+    h1 , h2{
+        padding: 0;
+    }
+
+    .show{
+        width: 100%;
+    }
+
+    .singer{
+        flex-direction: column;
+
+
+    }
+
+    .band{
+        flex-direction: column;
+    }
+
+    .meal_back{
+        background-position: center;
+        background-repeat: no-repeat;
+
+    }
+
+    .meal_layout{
+        width: 100%;
+
+    }
+
+    .drink{
+        flex-direction: column;
+
+    }
+
+    .food{
+        flex-direction: column;
+
+    }
+
+}
+
+@media screen and (max-width:767px) and (min-width:576px){
+
+}
+
+@media screen and (max-width:992px) and (min-width:768px){
+
+
+}
+
+@media screen and (max-width:1200px) and (min-width:991px){
+
+
+}

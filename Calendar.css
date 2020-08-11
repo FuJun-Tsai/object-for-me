@@ -1,0 +1,153 @@
+body{
+    background-image: url("./pic/keith-misner-h0Vxgz5tyXA-unsplash.jpg");
+
+}
+
+/* banner */
+
+.banner{
+    background-image: url("./pic/RIIN.jpg");
+    position: relative;
+    height: 100vh;
+    background-position: 0 100px;
+
+}
+
+.slogan{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    z-index: 29;
+    transform: translate(10%,-50%);
+    background-color: hsla(0,0%,0%,.7);
+    padding: 16px;
+    border-radius: 16px;
+
+
+}
+
+.slogan p{
+    font-size: 48px;
+
+}
+
+.slogan span{
+    color: #FFB366;
+    
+}
+
+/* /banner */
+
+/* calendar */
+
+.calendar{
+    width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    background-color: #383A3F;
+    margin-bottom: 100px;
+
+}
+
+.month{
+    text-align: center;    
+    background-color: #FFB366;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+
+}
+
+.month h6{
+    color: #80644C;
+    text-shadow: none;
+
+}
+
+.week , .day{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 16px;
+
+}
+
+.week div{
+    width: 13%;
+    background-color: #FFB366;
+    text-align: center;
+    font-weight: bold;
+    color: #80644C;
+    font-size: 20px;
+    line-height: 28px;
+
+}
+
+.day div{
+    position: relative;
+    width: 13%;
+    height: 100px;
+    background-color: hsla(28,25.5%,60%,1);
+
+}
+
+.showname{
+    font-size: 36px;
+    color: #FFB366;
+    font-weight: bold;
+
+}
+
+tr:last-child td{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+
+/* /calendar */
+
+
+.shower{
+    position: relative;
+    background-attachment: fixed;
+    height: 100vh;
+    
+}
+
+.colde{
+    background-image: url("./pic/20170708_Liiv_리브콘서트_크러쉬_2.png");
+
+}
+
+.name , .text{
+    position: absolute;
+
+}
+
+.name{
+    left: 10%;
+    top: 10%;
+    border: 4px double #FFB366;
+    padding: 0 16px;
+    background-color: hsla(0,0%,0%,.7);
+
+}
+
+.text{
+    right: 10%;
+    top: 10%;
+    width: 40%;
+    padding: 16px;
+    background-color: hsla(0,0%,0%,.7);
+    border-radius: 24px;
+
+}
+
+.EggPlantEgg{
+    background-image: url("./pic/EggPlantEgg2000x1335.png");
+
+}
