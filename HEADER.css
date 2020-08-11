@@ -25,7 +25,7 @@ header{
     justify-content: space-between;
     align-items: flex-end;
     background-color: #383A3F;
-    z-index: 1;
+    z-index: 30;
     font-size: 0;
 
 
@@ -159,7 +159,6 @@ a{
     position: absolute;
     width: 100px;
     background-color: #383A3F;
-    border: 1px solid;
     
 }
 
@@ -192,6 +191,7 @@ a{
     .hamburger{
         display: inline-block !important;
         position: absolute;
+        left: 4px;
         top: 50%;
         transform: translate(0,-50%);
 
@@ -199,9 +199,10 @@ a{
 
     .rowlogo{
         position: absolute;
-        top: 0;
+        top: 50%;
         left: 50%;
-        transform: translate(-50%,0);
+        transform: translate(-50%,-50%);
+        height: 80px;
 
     }
     
@@ -217,6 +218,26 @@ a{
     .maintitle_ctrl{
         display: inline-block !important;
 
+    }
+
+    .sub{
+        height: 130px;
+
+    }
+
+    .extra{
+        display: inline-block;
+        left: 50%;
+        top: 100%;
+        transform: translate(-50%,-100%);
+
+    }
+
+    .sub:hover .extra{
+        left: 50%;
+        top: 100%;
+        transform: translate(-50%,-100%);
+    
     }
 
     li.grid{
