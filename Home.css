@@ -148,7 +148,6 @@ body{
     display: flex;
     flex-direction: column;
     width: 75%;
-    border: 1px solid black;
     padding: 16px;
     padding-bottom: 40px;
 
@@ -204,6 +203,14 @@ body{
 
 @media screen and (max-width:575px){
 
+    .slogan{
+        top: 100%;
+        left: 0;
+        transform: translate(0,-100%);
+        width: 100%;
+        
+    }
+
     .slogan p{
         font-size: 24px;
         
@@ -212,15 +219,17 @@ body{
     .banner{
         background-size: contain;
         background-repeat: no-repeat;
-
+        height: 420px;
     }
 
     h1 , h2{
         padding: 0;
+
     }
 
     .show{
         width: 100%;
+        
     }
 
     .singer{
@@ -235,7 +244,7 @@ body{
 
     }
 
-    .band img , .band_text{
+    .band img {
         width: 375px;
 
     }

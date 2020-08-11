@@ -16,6 +16,7 @@ body{
 
 header{
     position: fixed;
+    height: 100px;
     width: 100%;
     padding: 0 20px;
     border: 1px solid black;
@@ -24,7 +25,7 @@ header{
     justify-content: space-between;
     align-items: flex-end;
     background-color: #383A3F;
-    z-index: 30;
+    z-index: 1;
     font-size: 0;
 
 
@@ -142,6 +143,11 @@ a{
 
 }
 
+.hamburger {
+    display: none !important;
+
+}
+
 /* 導覽列主次標 */
 .sub{
     position: relative;
@@ -183,16 +189,33 @@ a{
 
 @media screen and (max-width:575px){
 
-    header{
+    .hamburger{
+        display: inline-block !important;
+        position: absolute;
+        top: 50%;
+        transform: translate(0,-50%);
 
     }
 
+    .rowlogo{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%,0);
+
+    }
+    
     .maintitle{
         display: none;
         position: absolute;
         flex-direction: column;
         left: 0;
         top: 100px;
+
+    }
+
+    .maintitle_ctrl{
+        display: inline-block !important;
 
     }
 
