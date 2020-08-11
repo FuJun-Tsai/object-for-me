@@ -210,7 +210,6 @@ body{
     }
 
     .banner{
-        width: 575px;
         background-size: contain;
         background-repeat: no-repeat;
 
@@ -226,12 +225,19 @@ body{
 
     .singer{
         flex-direction: column;
-
+        align-items: center;
 
     }
 
     .band{
         flex-direction: column;
+        align-items: center;
+
+    }
+
+    .band img , .band_text{
+        width: 375px;
+
     }
 
     .meal_back{
@@ -252,6 +258,11 @@ body{
 
     .food{
         flex-direction: column;
+
+    }
+
+    .food_detail img , .food_text{
+        width: 375px;
 
     }
 
