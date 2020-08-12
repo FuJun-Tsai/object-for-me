@@ -219,6 +219,106 @@ body{
     .banner{
         background-size: contain;
         background-repeat: no-repeat;
+        
+
+    }
+
+    h1 , h2{
+        padding: 20px;
+
+    }
+
+    .show{
+        width: 100%;
+        
+    }
+
+    .singer{
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .singer_list{
+        padding-bottom:100px ;
+
+    }
+
+    .band{
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .band_detail{
+        padding-bottom: 100px;
+
+    }
+
+    .band img {
+        width: 375px;
+
+    }
+
+    .meal_back{
+        background-image: none;
+        /* background-position: center;
+        background-repeat: no-repeat; */
+
+    }
+
+    .meal_layout{
+        width: 100%;
+
+    }
+
+    .drink{
+        flex-direction: column;
+
+    }
+
+    .drink_detail{
+        padding-bottom: 100px;
+    }
+
+    .drink_text{
+        width: 300px;
+    }
+
+    .food{
+        flex-direction: column;
+
+    }
+
+    .food_detail{
+        padding-bottom: 100px;
+    }
+
+    .food_detail img , .food_text{
+        width: 375px;
+
+    }
+
+}
+
+@media screen and (max-width:767px) and (min-width:576px){
+
+    .slogan{
+        top: 100%;
+        left: 0;
+        transform: translate(0,-100%);
+        width: 100%;
+        
+    }
+
+    .slogan p{
+        font-size: 28px;
+        
+    }
+
+    .banner{
+        background-size: contain;
+        background-repeat: no-repeat;
         height: 420px;
     }
 
@@ -238,10 +338,20 @@ body{
 
     }
 
+    .singer_list{
+        padding-bottom:100px ;
+
+    }
+
     .band{
         flex-direction: column;
         align-items: center;
 
+    }
+
+    .band_detail{
+        padding-bottom: 100px;
+        
     }
 
     .band img {
@@ -250,8 +360,9 @@ body{
     }
 
     .meal_back{
-        background-position: center;
-        background-repeat: no-repeat;
+        background-image: none;
+        /* background-position: center;
+        background-repeat: no-repeat; */
 
     }
 
@@ -265,19 +376,27 @@ body{
 
     }
 
+    .drink_detail{
+        padding-bottom: 100px;
+    }
+
+    .drink_text{
+        width: 300px;
+    }
+
     .food{
         flex-direction: column;
 
+    }
+
+    .food_detail{
+        padding-bottom: 100px;
     }
 
     .food_detail img , .food_text{
         width: 375px;
 
     }
-
-}
-
-@media screen and (max-width:767px) and (min-width:576px){
 
 }
 
