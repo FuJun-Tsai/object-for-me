@@ -6,7 +6,7 @@ $(document).ready(function(){
         
     });
 
-    let bannerheight = $('body').width() * 0.67; 
+    let bannerheight = $('body').width() * 0.66; 
     $('.banner').css('height',bannerheight);
 
 });
