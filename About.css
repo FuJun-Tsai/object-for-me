@@ -101,12 +101,11 @@ h4{
 
     .banner1{
         height: 100vh;
-        margin-bottom: 100px;
+        
     }
 
     .banner2,.banner3,.banner4{
         height: 80vh;
-        margin-bottom: 80px;
 
     }
 
@@ -120,11 +119,6 @@ h4{
         left: 0;
         
     }
-    
-    .textlayout h4 , .textlayout2 h4{
-        font-size: 24px;
-
-    }
 
     .buttonlayout{
         width: 100%;
@@ -134,8 +128,7 @@ h4{
     .buttonlayout p{
         width: 100%;
         padding-bottom: 80px;
-        font-size: 16px;
-
+        line-height: 48px;
     }
 
 }
