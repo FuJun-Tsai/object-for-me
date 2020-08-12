@@ -89,7 +89,7 @@ body{
 .day div{
     position: relative;
     width: 13%;
-    height: 100px;
+    height: 120px;
     background-color: hsla(28,25.5%,60%,1);
 
 }
@@ -98,10 +98,16 @@ body{
     font-size: 36px;
     color: #FFB366;
     font-weight: bold;
+    text-shadow: 4px 4px 12px black;
 
 }
 
+tr:first-child td{
+    font-size: 20px;
+}
+
 tr:last-child td{
+    font-size: 20px;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -149,5 +155,52 @@ tr:last-child td{
 
 .EggPlantEgg{
     background-image: url("./pic/EggPlantEgg2000x1335.png");
+
+}
+
+/* RWD */
+@media screen and (max-width:575px){
+
+    .banner{
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .calendar{
+        width: 100%;
+
+    }
+
+
+}
+    
+
+@media screen and (max-width:767px) and (min-width:576px){
+
+    .banner{
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 420px;
+    }
+
+}
+
+@media screen and (max-width:992px) and (min-width:768px){
+
+    .banner{
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 420px;
+    }
+
+}
+
+@media screen and (max-width:1200px) and (min-width:991px){
+
+    .banner{
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 420px;
+    }
 
 }

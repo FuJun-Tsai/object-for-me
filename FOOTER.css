@@ -73,12 +73,57 @@ footer p{
 
 @media screen and (max-width:767px) and (min-width:576px){
 
+    footer{
+        flex-direction: column;
+        height: 200px;
 
+    }
+
+    .strlogo{
+        display: none;
+
+    }
+
+    .map{
+        display: none;
+    }
+
+    .icons{
+        left: calc(100% - 104px);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+
+    }
 
 }
 
 @media screen and (max-width:992px) and (min-width:768px){
 
+    footer{
+        flex-direction: column;
+        height: 200px;
+
+    }
+
+    .strlogo{
+        display: none;
+
+    }
+
+    .map{
+        display: none;
+    }
+
+    .icons{
+        left: calc(100% - 104px);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+
+    }
 
 }
 

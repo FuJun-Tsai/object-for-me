@@ -249,7 +249,59 @@ a{
 
 @media screen and (max-width:767px) and (min-width:576px){
 
+    .hamburger{
+        display: inline-block !important;
+        position: absolute;
+        left: 4px;
+        top: 50%;
+        transform: translate(0,-50%);
+
+    }
+
+    .rowlogo{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        height: 80px;
+
+    }
+    
     .maintitle{
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        left: 0;
+        top: 100px;
+
+    }
+
+    .maintitle_ctrl{
+        display: inline-block !important;
+
+    }
+
+    .sub{
+        height: 130px;
+
+    }
+
+    .extra{
+        display: inline-block;
+        left: 50%;
+        top: 100%;
+        transform: translate(-50%,-100%);
+
+    }
+
+    .sub:hover .extra{
+        left: 50%;
+        top: 100%;
+        transform: translate(-50%,-100%);
+    
+    }
+
+    li.grid{
         display: none;
 
     }
@@ -258,29 +310,67 @@ a{
 
 @media screen and (max-width:992px) and (min-width:768px){
 
+    .hamburger{
+        display: inline-block !important;
+        position: absolute;
+        left: 4px;
+        top: 50%;
+        transform: translate(0,-50%);
+
+    }
+
+    .rowlogo{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        height: 80px;
+
+    }
+    
     .maintitle{
         display: none;
-
-    }
-
-}
-
-@media screen and (max-width:1200px) and (min-width:991px){
-
-    header{
-        width: 100%;
-
-    }
-
-    .maintitle{
-        /* display: none; */
         position: absolute;
         flex-direction: column;
         left: 0;
         top: 100px;
 
+    }
+
+    .maintitle_ctrl{
+        display: inline-block !important;
 
     }
+
+    .sub{
+        height: 130px;
+
+    }
+
+    .extra{
+        display: inline-block;
+        left: 50%;
+        top: 100%;
+        transform: translate(-50%,-100%);
+
+    }
+
+    .sub:hover .extra{
+        left: 50%;
+        top: 100%;
+        transform: translate(-50%,-100%);
+    
+    }
+
+    li.grid{
+        display: none;
+
+    }
+}
+
+@media screen and (max-width:1200px) and (min-width:991px){
+
+    
 
     li.grid{
         display: none;
