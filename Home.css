@@ -1,5 +1,6 @@
 body{
     background-image: url("./pic/keith-misner-h0Vxgz5tyXA-unsplash.jpg");
+    background-size: contain;
 
 }
 
@@ -262,9 +263,9 @@ body{
     }
 
     .meal_back{
-        /* background-image: none; */
-        background-position: center;
-        background-repeat: no-repeat;
+        background-image: none;
+        /* background-position: center;
+        background-repeat: no-repeat; */
 
     }
 
