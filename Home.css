@@ -262,9 +262,9 @@ body{
     }
 
     .meal_back{
-        background-image: none;
-        /* background-position: center;
-        background-repeat: no-repeat; */
+        /* background-image: none; */
+        background-position: center;
+        background-repeat: no-repeat;
 
     }
 
@@ -365,9 +365,9 @@ body{
     }
 
     .meal_back{
-        /* background-image: none; */
-        background-position: center;
-        background-repeat: no-repeat;
+        background-image: none;
+        /* background-position: center;
+        background-repeat: no-repeat; */
 
     }
 

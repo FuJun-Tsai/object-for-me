@@ -78,7 +78,102 @@
 }
 
 
+/* RWD */
+@media screen and (max-width:575px){
 
+    .back1 ,.back2{
+        background-position: 50% 0%;
+
+
+    }
+
+    .content{
+        width: 100%;
+        padding-bottom: 50vh;
+
+    }
+
+    .singer , .singer_reverse{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 100%;
+
+    }
+
+    .singer{
+        margin-bottom: 50vh;
+
+    }
+
+    .singer img , .singer_reverse img{
+        max-width: 500px;
+        width: 100%;
+
+    }
+
+    .singer .text , .singer_reverse .text{
+        width: 100%;
+        
+    }
+
+    .engname{
+        font-size: 32px;
+    }
+
+}
+    
+@media screen and (max-width:767px) and (min-width:576px){
+
+    .content{
+        height: 50vh;
+
+    }
+
+    .singer , .singer_reverse{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+
+    }
+
+    .singer img , .singer_reverse img{
+        max-width: 500px;
+        width: 100%;
+
+    }
+
+
+    .engname{
+        font-size: 32px;
+    }
+
+}
+
+@media screen and (max-width:992px) and (min-width:768px){
+
+    .back1 ,.back2{
+        background-position: 50% 0%;
+
+    }
+
+    .content{
+        width: 100%;
+
+    }
+
+    .singer , .singer_reverse{
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+
+        padding-bottom: 100px;
+
+    }
+
+}
 
 
 
