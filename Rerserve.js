@@ -1,12 +1,32 @@
-// DOM 載入完成之後
-$(function(){
+$(document).ready(function(){
 
-    // 點擊
-    $("button.btn_drawer").on("click", function(){
+  let screen = $('html').width();
+
+  if( screen < 768){
+
+    let bookwindowwidth = screen ;
+    let bookwindowheight = screen * 12 / 7 ;
+
+    
+    
+    $('.result').addClass('-open');
+
+    $('bookwindow').addCss({
+      height : bookwindowwidth ,
+      width : bookwindowheight ,
+
       
-      // -open 的樣式切換
-      $(this).closest("div.result").toggleClass("-open");
-      
+
     });
-  
+
+  }
+
+
+
+  $('.btn_drawer').click(function(){
+
+    $('.result').toggleClass('-open');
+
   });
+
+});

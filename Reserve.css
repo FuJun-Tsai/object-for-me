@@ -26,7 +26,6 @@ h2{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    height: 50px;
     
 }
 
@@ -362,10 +361,44 @@ select ,input[type="text"] ,input[type="date"] {
     div.result.-open{
         transform: translate(100%, -50%);
 
-      }
+    }
     
 /* result */
 /* ========================================================= */
 /*  RWD */
       
+
+@media screen and (max-width:575px){
+
+    .back{
+        width: 100%;
+    }
+
+    .daytime{
+        width: 100%;
+        margin: 20px 0;
+        flex-direction: column;
+
+    }
+
+    .bookwindow{
+        transform: rotate( 90deg);
+        margin: 0;
+        padding: 0;
+
+    }
+
+}
+    
+@media screen and (max-width:767px) and (min-width:576px){
+
+}
+
+@media screen and (max-width:991px) and (min-width:768px){
+
+}
+
+@media screen and (max-width:1200px) and (min-width:992px){
+
+}
 
