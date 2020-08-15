@@ -10,6 +10,11 @@ body{
 
 }
 
+.back{
+    padding-top: 100px;
+
+}
+
 h2{
     padding-bottom: 0;
     color: #F6B352;
@@ -350,3 +355,62 @@ div.result.-open{
 
 /* /result */
 /* ========================================================= */
+/* RWD */
+
+@media screen and (max-width:575px){
+
+    .content{
+        width: 100%;
+        flex-direction: column;
+
+    }
+
+    .drink{
+        margin-left: 50px;
+
+    }
+
+    .side{
+        width: 90%;
+
+    }
+
+    .plus , .minus{
+        width: 28px;
+        height: 28px;
+    }
+
+    .booked{
+        width: 100%;
+
+    }
+
+    .plus_table , .minus_table{
+        width: 28px;
+        height: 28px;
+
+    }
+
+
+
+}
+    
+@media screen and (max-width:767px) and (min-width:576px){
+
+
+}
+
+@media screen and (max-width:992px) and (min-width:768px){
+
+
+}
+
+@media screen and (max-width:1200px) and (min-width:991px){
+
+
+}
+
+@media screen and (min-width:1200px){
+
+
+}
