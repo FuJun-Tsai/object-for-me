@@ -136,8 +136,8 @@ div.side, div.booked{
     padding: 0;
     border-radius: 50%;
     background-size: contain;
-    opacity: 0;
-    
+    visibility: hidden;
+
     left: -4px;
     top: 50%;
     transform: translate(0,-50%);
@@ -154,8 +154,8 @@ div.side, div.booked{
     padding: 0;
     border-radius: 50%;
     background-size: contain;
-    opacity: 0;
-    
+    visibility: hidden;
+
     left: -8px;
     top: 50%;
     transform: translate(-100%,-50%);
@@ -169,13 +169,13 @@ div.side, div.booked{
 }
 
 .item:hover .plus{
-    opacity: 1;
+    visibility: visible;
     background-color: hsla(28, 25.5%, 80%, 1);
 
 }
 
 .item:hover .minus{
-    opacity: 1;
+    visibility: visible;
     background-color: hsla(28, 25.5%, 80%, 1);
 
 }
