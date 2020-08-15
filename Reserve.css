@@ -463,6 +463,11 @@ select ,input[type="text"] ,input[type="date"] {
     
     }
 
+    .show p{
+
+        font-size: 48px;
+    }
+
 }
 
 @media screen and (max-width:1200px) and (min-width:992px){
