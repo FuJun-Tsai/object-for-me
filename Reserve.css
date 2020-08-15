@@ -42,15 +42,27 @@ option{
 .bookwindow{
     position: relative;
     width: 1200px;
-    height: 700px;
+    /* height: 700px; */
     border: 1px solid black;
-    /* margin: 20px auto ; */
     margin: 20px auto ;
 
     overflow: hidden;
 
     background-image: url("./pic/keith-misner-h0Vxgz5tyXA-unsplash.jpg");
     background-size: contain;
+
+}
+
+P.remark{
+    font-size: 16px;
+
+}
+
+select ,input[type="text"] ,input[type="date"] {
+    width: 300px;
+    margin-bottom: 10px;
+    color: black;
+    font-size: 24px;
 
 }
 
@@ -69,35 +81,30 @@ option{
     bottom: 50%;
     right: 50%;
     transform: translate(50%,50%);
-    border-radius:0 ;  
+    border-radius:0 ; 
 
 }
 
 .bookwindow div button:nth-child(n+2){
     position: absolute;
-    width: 40px;
-    height: 40px;
+    padding: 20px;
     border-radius: 50% ;
 
 }
 
-P.remark{
-    font-size: 16px;
-
-}
-
-select ,input[type="text"] ,input[type="date"] {
-    width: 300px;
-    margin-bottom: 10px;
-    color: black;
-    font-size: 24px;
-
-}
 
 /* ========================================================== */
 
 /* 吧檯 */
 
+/* @media > 1200px */
+
+@media screen and (min-width:1200px){
+
+.bookwindow{
+    height: 700px;
+}
+    
 .Ablock{
     top: 0;
     right: 4%;
@@ -259,13 +266,13 @@ select ,input[type="text"] ,input[type="date"] {
 
     .show{
         position: absolute;
-        width: 300px;
-        height: 300px;
+        width: 25%;
+        height: 42%;
         border: 1px solid black;
         border-radius: 50%;
         background-color: black;
         
-        bottom: 180px;
+        bottom: 25%;
         transform: translate(-50% , 0);
         
     }
@@ -281,8 +288,14 @@ select ,input[type="text"] ,input[type="date"] {
         transform: translate(25% , 50%);
 
     }
+}
+
+/* /@media > 1200px */
 
 /* /舞台 */
+/* ========================================================= */
+
+
 /* ========================================================= */
 /* result */
 
@@ -381,24 +394,325 @@ select ,input[type="text"] ,input[type="date"] {
 
     }
 
-    .bookwindow{
-        transform: rotate( 90deg);
-        margin: 0;
-        padding: 0;
+    .bookwindow div button:nth-child(n+2){
+        position: absolute;
+        padding: 16px;
+        border-radius: 50% ;
+    
+    }
+
+    .show p{
+        font-size: 24px;
+        
 
     }
 
 }
     
-@media screen and (max-width:767px) and (min-width:576px){
+@media screen and (max-width:699px) and (min-width:576px){
+
+    .back{
+        width: 100%;
+    }
+
+    .daytime{
+        width: 100%;
+        margin: 20px 0;
+        flex-direction: column;
+
+    }
+
+    .bookwindow{
+        /* display: none; */
+        
+
+    }
+
+    .bookwindow div button:nth-child(n+2){
+        position: absolute;
+        padding: 16px;
+        border-radius: 50% ;
+    
+    }
 
 }
 
-@media screen and (max-width:991px) and (min-width:768px){
+@media screen and (max-width:991px) and (min-width:700px){
+
+    .back{
+        width: 100%;
+    }
+
+    .daytime{
+        width: 100%;
+        margin: 20px 0;
+        flex-direction: column;
+
+    }
+
+    .bookwindow{
+        width: 700px !important;
+        margin: 20px auto;
+
+    }
+
+    .bookwindow div button:nth-child(n+2){
+        position: absolute;
+        padding: 20px !important;
+        border-radius: 50% ;
+    
+    }
 
 }
 
 @media screen and (max-width:1200px) and (min-width:992px){
 
+    .back{
+        width: 100%;
+    }
+
+    .daytime{
+        width: 100%;
+        margin: 20px 0;
+        flex-direction: column;
+
+    }
+
+    .bookwindow{
+        width: 700px !important;
+        margin: 20px auto;
+    }
+
+    .bookwindow div button:nth-child(n+2){
+        position: absolute;
+        padding: 20px;
+        border-radius: 50% ;
+    
+    }
+
 }
 
+
+
+/* for bookwindow 訂位 */
+@media screen and (max-width:1200px){
+
+    .bookwindow{
+    position: relative;
+    width: 100%;
+
+}
+
+.bookwindow button{
+    position: absolute;
+
+}
+
+.bookwindow div{
+    position: absolute;
+
+}
+
+.bookwindow div button:first-child(){
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%,50%);
+    border-radius:0 ; 
+
+}
+
+.bookwindow div button:nth-child(n+2){
+    position: absolute;
+    padding: 12px;
+    border-radius: 50% ;
+    width: 0;
+    height: 0;
+
+}
+
+/* ========================================================== */
+
+/* 吧檯 */
+
+.Ablock{
+    right: 0;
+    bottom: 4%;
+    width: 29%;
+    height: 54%;
+        
+}
+
+.A{
+    right: 0;
+    top: 0;
+    height: 90%;
+    width: 75%;
+    border-radius: 0 0 0 50px;
+
+}
+
+.A1 , .A2{
+    bottom: 0;
+}
+
+.A1{
+    right: 5%;
+}
+
+.A2{
+    right: 35%;
+}
+
+.A3 , .A4 , .A5 , .A6 , .A7 , .A8 , .A9{
+    left: 0;
+}
+
+.A3{
+    bottom: 20%;
+}
+
+.A4{
+    bottom: 32%;
+}
+
+.A5{
+    bottom: 44%;
+}
+
+.A6{
+    bottom: 56%;
+}
+
+.A7{
+    bottom: 68%;
+}
+
+.A8{
+    bottom: 80%;
+}
+
+.A9{
+    bottom: 92%;
+}
+
+/* /吧檯 */
+/* ========================================================== */
+/* 方桌 */
+
+.block{
+    height:30%;
+    width:30%;
+    
+}
+
+.b{
+    height: 42%;
+    width: 75%;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%,50%);
+
+}
+
+.b1{
+    right: 20%;
+    bottom: 10%;
+
+}
+
+.b2{
+    left: 20%;
+    bottom: 10%;
+
+}
+
+.b3{
+    right: 20%;
+    top: 10%;
+    
+}
+
+.b4{
+    left: 20%;
+    top: 10%;
+
+}
+
+/* /方桌 */
+/* ========================================================= */
+/* 位置 */
+
+    /* 水平 */
+    .B , .C{
+        bottom: 0;
+
+    }
+
+    .D , .E{
+        bottom: 30%;
+
+    }
+
+    .F , .G{
+        top: 10%;
+
+    }
+    /* /水平 */
+
+    /* 垂直 */
+    .B , .D{
+        left: 35%;
+
+    }
+
+    .C , .E{
+        left: 0px;
+
+    }
+
+    .F{
+        left: 60%;
+
+    }
+
+    .G{
+        left: 15%;
+
+    }
+    /* /垂直 */
+
+    /* 旋轉 */
+    .F , .G{
+        transform: rotate(-30deg);
+
+    }
+
+    /* /旋轉 */
+
+/* /All */
+
+    .show{
+        position: absolute;
+        height: 25%;
+        width: 42%;
+        border: 1px solid black;
+        border-radius: 50%;
+        background-color: black;
+        
+        left: 25%;
+        transform: translate(0 , -50%);
+        
+    }
+
+    .show p{
+        color: white;
+        position: absolute;
+
+        left: 50%;
+        top: 75%;
+        transform: translate(-50%,-25%) ;
+
+    }
+
+}
