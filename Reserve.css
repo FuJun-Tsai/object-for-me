@@ -385,6 +385,12 @@ select ,input[type="text"] ,input[type="date"] {
 
     .back{
         width: 100%;
+
+    }
+
+    h5{
+        padding: 20px;
+
     }
 
     .daytime{
@@ -415,6 +421,11 @@ select ,input[type="text"] ,input[type="date"] {
         width: 100%;
     }
 
+    h5{
+        padding: 20px;
+
+    }
+
     .daytime{
         width: 100%;
         margin: 20px 0;
@@ -437,7 +448,7 @@ select ,input[type="text"] ,input[type="date"] {
 
 }
 
-@media screen and (max-width:991px) and (min-width:700px){
+@media screen and (max-width:1200px) and (min-width:700px){
 
     .back{
         width: 100%;
@@ -451,7 +462,6 @@ select ,input[type="text"] ,input[type="date"] {
     }
 
     .bookwindow{
-        width: 700px !important;
         margin: 20px auto;
 
     }

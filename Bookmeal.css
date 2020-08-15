@@ -359,6 +359,11 @@ div.result.-open{
 
 @media screen and (max-width:575px){
 
+    h5{
+        padding: 20px;
+
+    }
+
     .content{
         width: 100%;
         flex-direction: column;
@@ -378,6 +383,8 @@ div.result.-open{
     .plus , .minus{
         width: 28px;
         height: 28px;
+        visibility: visible;
+
     }
 
     .booked{
@@ -397,11 +404,87 @@ div.result.-open{
     
 @media screen and (max-width:767px) and (min-width:576px){
 
+    h5{
+        padding: 20px;
+
+    }
+
+    .content{
+        width: 100%;
+        flex-direction: column;
+
+    }
+
+    .drink{
+        margin-left: 50px;
+
+    }
+
+    .side{
+        width: 90%;
+
+    }
+
+    .plus , .minus{
+        width: 28px;
+        height: 28px;
+        visibility: visible ;
+
+    }
+
+    .booked{
+        width: 100%;
+
+    }
+
+    .plus_table , .minus_table{
+        width: 28px;
+        height: 28px;
+
+    }
 
 }
 
 @media screen and (max-width:992px) and (min-width:768px){
 
+    h5{
+        padding: 20px;
+
+    }
+
+    .content{
+        width: 100%;
+        flex-direction: column;
+
+    }
+
+    .drink{
+        margin-left: 50px;
+
+    }
+
+    .side{
+        width: 90%;
+
+    }
+
+    .plus , .minus{
+        width: 28px;
+        height: 28px;
+        visibility: visible;
+
+    }
+
+    .booked{
+        width: 100%;
+
+    }
+
+    .plus_table , .minus_table{
+        width: 28px;
+        height: 28px;
+
+    }
 
 }
 
