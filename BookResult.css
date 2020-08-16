@@ -1,0 +1,108 @@
+body{
+    background-image: url("./pic/eff.png");
+    background-color: black;
+    background-position: 70% 0%;
+
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+
+.back{
+    /* background-color: #383A3F; */
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 100px;
+    
+}
+
+h6{
+    margin-top: 40px;
+    color: #F6B352;
+
+}
+
+nav{
+    width:600px;
+}
+
+table{
+    width: 400px;
+    margin: 0 auto;
+
+}
+
+td{
+    font-size: 24px;
+}
+
+.resultlayout{
+    margin: 0 auto;
+    width: 400px;
+    padding-bottom: 40px;
+}
+
+.resultlayout p{
+    display: inline;
+
+}
+
+.proname{
+    width: 50%;
+    
+}
+
+.proquan{
+    width: 12.5%;
+    text-align: right;
+
+}
+
+.proval{
+    width: 37.5%;
+    text-align: right;
+
+}
+
+.total{
+    max-width: 400px;
+    width: 100%;
+    text-align: right;
+    font-size: 24px;
+    margin: 0 auto;
+
+}
+
+.total span{
+    color: #F6B352;
+
+}
+
+.back button{
+    display: inline-block;
+    margin-left: 50%;
+    transform: translate(-50%,0);
+    margin-bottom: 40px;
+
+}
+
+/* ========================================================= */
+/* RWD */
+
+@media screen and (max-width:1200px){
+
+    .back{
+        width: 100%;
+
+    }
+
+}
+
+@media screen and (min-width:1200px){
+
+
+}
+
+
+
+
+
