@@ -22,7 +22,9 @@ h6{
 }
 
 nav{
-    width:600px;
+    max-width:600px;
+    width: 90%;
+
 }
 
 table{
@@ -94,7 +96,6 @@ td{
         width: 100%;
 
     }
-
 
 }
 
