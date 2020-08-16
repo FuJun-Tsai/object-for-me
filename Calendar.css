@@ -75,6 +75,11 @@ body{
 
 }
 
+.hide{
+    display: none;
+    
+}
+
 .week div{
     width: 13%;
     background-color: #FFB366;
@@ -180,6 +185,7 @@ tr:last-child td{
 
     .day{
         flex-direction: column;
+        height: 80vh;
 
     }
 
@@ -216,6 +222,7 @@ tr:last-child td{
     
     .name h3{
         font-size: 24px;
+
     }
 
 
@@ -228,8 +235,59 @@ tr:last-child td{
     .banner{
         background-size: contain;
         background-repeat: no-repeat;
-        height: 420px;
 
+    }
+
+    .calendar{
+        width: 90%;
+ 
+    }
+
+    .week{
+        display: none;
+
+    }
+
+    .day{
+        flex-direction: column;
+        height: 80vh;
+
+    }
+
+    .day div{
+        width: 90%;
+        margin: 4px auto;
+
+    }
+
+    table{
+        width: 100%;
+    }
+
+    .showname{
+        text-align: center;
+
+    }
+
+    .shower{
+        background-size: contain;
+    }
+
+    .text{
+        display: none;
+
+    }
+
+    .name{
+        left: 60%;
+        top: 20%;
+        transform: translate(0,0);
+
+    }
+    
+    .name h3{
+        font-size: 24px;
+        
     }
 
 }
@@ -239,8 +297,59 @@ tr:last-child td{
     .banner{
         background-size: contain;
         background-repeat: no-repeat;
-        height: 420px;
 
+    }
+
+    .calendar{
+        width: 90%;
+ 
+    }
+
+    .week{
+        display: none;
+
+    }
+
+    .day{
+        flex-direction: column;
+        height: 80vh;
+
+    }
+
+    .day div{
+        width: 90%;
+        margin: 4px auto;
+
+    }
+
+    table{
+        width: 100%;
+    }
+
+    .showname{
+        text-align: center;
+
+    }
+
+    .shower{
+        background-size: contain;
+    }
+
+    .text{
+        display: none;
+
+    }
+
+    .name{
+        left: 60%;
+        top: 20%;
+        transform: translate(0,0);
+
+    }
+    
+    .name h3{
+        font-size: 24px;
+        
     }
 
 }
@@ -250,7 +359,59 @@ tr:last-child td{
     .banner{
         background-size: contain;
         background-repeat: no-repeat;
-        height: 420px;
+
+    }
+
+    .calendar{
+        width: 90%;
+ 
+    }
+
+    .week{
+        display: none;
+
+    }
+
+    .day{
+        flex-direction: column;
+        height: 80vh;
+
+    }
+
+    .day div{
+        width: 90%;
+        margin: 4px auto;
+
+    }
+
+    table{
+        width: 100%;
+    }
+
+    .showname{
+        text-align: center;
+
+    }
+
+    .shower{
+        background-size: contain;
+    }
+
+    .text{
+        display: none;
+
+    }
+
+    .name{
+        left: 60%;
+        top: 20%;
+        transform: translate(0,0);
+
+    }
+    
+    .name h3{
+        font-size: 24px;
+        
     }
 
 }

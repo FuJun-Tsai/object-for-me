@@ -11,9 +11,23 @@ $(document).ready(function(){
         let planteggheight = $('html').width() * 1000 / 1920 ;
         $('.EggPlantEgg').css('height',planteggheight);
 
+        for( let i = 0 ; i < 4 ; i+=1){
+
+            $('.day').addClass('hide');
+            $('.day:nth(0)').toggleClass('hide');
+
+        }
+
+
+
     }
 
+
+    // $('.day').each();
+
     
+
+
 
 
 
