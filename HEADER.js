@@ -2,8 +2,24 @@ $(document).ready(function(){
 
     $('.hamburger').click(function(){
 
-        $('.maintitle').toggleClass('maintitle_ctrl').css('backgroundColor','#383A3F');
+        $('.maintitlephone').slideToggle().css('backgroundColor','#383A3F');
         $(this).toggleClass("is-active");
+
+
     });
 
+    let windowwidth = $('html').width();
+
+    if( windowwidth < 991 ){
+
+        $('.maintitle').css('display','none');
+
+    }else if( windowwidth > 992){
+
+        $('.maintitlephone').css('display','none');
+
+    }
+    
 });
+
+

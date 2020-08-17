@@ -41,7 +41,6 @@ option{
 
 .bookwindow{
     position: relative;
-    width: 1200px;
     /* height: 700px; */
     border: 1px solid black;
     margin: 20px auto ;
@@ -103,6 +102,7 @@ select ,input[type="text"] ,input[type="date"] {
 
 .bookwindow{
     height: 700px;
+
 }
     
 .Ablock{
@@ -433,12 +433,6 @@ select ,input[type="text"] ,input[type="date"] {
 
     }
 
-    .bookwindow{
-        /* display: none; */
-        
-
-    }
-
     .bookwindow div button:nth-child(n+2){
         position: absolute;
         padding: 16px;
@@ -452,6 +446,7 @@ select ,input[type="text"] ,input[type="date"] {
 
     .back{
         width: 100%;
+
     }
 
     .daytime{
@@ -463,6 +458,8 @@ select ,input[type="text"] ,input[type="date"] {
 
     .bookwindow{
         margin: 20px auto;
+        width: 700px !important;
+        height: 1200px;
 
     }
 
@@ -479,34 +476,6 @@ select ,input[type="text"] ,input[type="date"] {
     }
 
 }
-
-@media screen and (max-width:1200px) and (min-width:992px){
-
-    .back{
-        width: 100%;
-    }
-
-    .daytime{
-        width: 100%;
-        margin: 20px 0;
-        flex-direction: column;
-
-    }
-
-    .bookwindow{
-        width: 700px !important;
-        margin: 20px auto;
-    }
-
-    .bookwindow div button:nth-child(n+2){
-        position: absolute;
-        padding: 20px;
-        border-radius: 50% ;
-    
-    }
-
-}
-
 
 
 /* for bookwindow 訂位 */

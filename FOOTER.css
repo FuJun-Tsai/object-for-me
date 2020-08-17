@@ -22,8 +22,16 @@ footer p{
 
 .icons{
     position: absolute;
-    bottom: 4px;
-    left: 4px;
+    bottom: 16px;
+    left: 16px;
+
+}
+
+i{
+    font-size: 48px;
+    color: #FFB366;
+    width: 48px;
+    height: 48px;
 
 }
 
@@ -65,9 +73,10 @@ footer p{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        
 
     }
+
+
 
 }
 

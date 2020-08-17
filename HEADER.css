@@ -120,19 +120,28 @@ a{
 
 }
 
-.maintitle{
+.maintitle {
     display: flex;
     flex-direction: row;
     font-weight: bold;
     
 }
 
+.maintitlephone{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    
+
+}
+
+
 .rowlogo{
     height: 100px;
 
 }
 
-.maintitle li{
+.maintitle li ,.maintitlephone li{
     padding: 0 20px;
     font-size: 32px;
 
@@ -206,17 +215,13 @@ a{
 
     }
     
-    .maintitle{
+    .maintitlephone{
         display: none;
         position: absolute;
         flex-direction: column;
         left: 0;
         top: 100px;
-
-    }
-
-    .maintitle_ctrl{
-        display: inline-block !important;
+        width: 100%;
 
     }
 
@@ -267,17 +272,12 @@ a{
 
     }
     
-    .maintitle{
+    .maintitlephone{
         display: none;
         position: absolute;
         flex-direction: column;
         left: 0;
         top: 100px;
-
-    }
-
-    .maintitle_ctrl{
-        display: inline-block !important;
 
     }
 
@@ -328,17 +328,12 @@ a{
 
     }
     
-    .maintitle{
+    .maintitlephone{
         display: none;
         position: absolute;
         flex-direction: column;
         left: 0;
         top: 100px;
-
-    }
-
-    .maintitle_ctrl{
-        display: inline-block !important;
 
     }
 

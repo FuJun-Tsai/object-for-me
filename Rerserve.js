@@ -2,7 +2,7 @@ $(document).ready(function(){
 
   let screen = $('html').width();
 
-  if( screen < 1200){
+  if( screen < 700){
     
     let bookingheight = screen * 12 / 7 ;
 
@@ -12,8 +12,6 @@ $(document).ready(function(){
 
 
   }
-
-
 
   $('.btn_drawer').click(function(){
 
