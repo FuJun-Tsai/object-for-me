@@ -105,10 +105,17 @@ div.side, div.booked{
 
 }
 
+.meal , .booked{
+    width: 1200px;
+    margin: 20px auto;
+    font-size: 24px;
+    
+}
+
 .meal{
     width: 1200px;
     vertical-align: top;
-    margin: 20px auto;
+    font-size: 0;
 
 }
 
@@ -179,13 +186,14 @@ div.side, div.booked{
 }
 
 .booked{
+    position: sticky;
+    top: 10%;    
     width: 540px;
     height: 360px;
     /* background-color: #383A3F; */
     padding: 0 12px;
     z-index: 0;
     margin: 0;
-    font-size: 24px;
     
 }
 
@@ -369,8 +377,6 @@ div.result.-open{
 
     .side{
         width: 90%;
-        margin-bottom: 0;
-        padding-bottom: 100px;
 
     }
 
@@ -382,8 +388,7 @@ div.result.-open{
     }
 
     .booked{
-        width: 90%;
-        margin-bottom: 200px;
+        width: 100%;
 
     }
 
@@ -417,21 +422,18 @@ div.result.-open{
 
     .side{
         width: 90%;
-        margin-bottom: 0;
-        padding-bottom: 100px;
 
     }
 
     .plus , .minus{
         width: 28px;
         height: 28px;
-        visibility: visible;
+        visibility: visible ;
 
     }
 
     .booked{
-        width: 90%;
-        margin-bottom: 200px;
+        width: 100%;
 
     }
 
@@ -463,8 +465,6 @@ div.result.-open{
 
     .side{
         width: 90%;
-        margin-bottom: 0;
-        padding-bottom: 100px;
 
     }
 
@@ -476,8 +476,7 @@ div.result.-open{
     }
 
     .booked{
-        width: 90%;
-        margin-bottom: 200px;
+        width: 100%;
 
     }
 
@@ -491,58 +490,10 @@ div.result.-open{
 
 @media screen and (max-width:1200px) and (min-width:991px){
 
-    h5{
-        padding: 20px;
-
-    }
-
-    .content{
-        width: 100%;
-        flex-direction: column;
-
-    }
-
-    .drink{
-        margin-left: 50px;
-
-    }
-
-    .side{
-        width: 90%;
-        margin-bottom: 0;
-        padding-bottom: 100px;
-
-    }
-
-    .plus , .minus{
-        width: 28px;
-        height: 28px;
-        visibility: visible;
-
-    }
-
-    .booked{
-        width: 90%;
-        margin-bottom: 200px;
-
-    }
-
-    .plus_table , .minus_table{
-        width: 28px;
-        height: 28px;
-
-    }
 
 }
 
 @media screen and (min-width:1200px){
 
-    .booked{
-        position: sticky;
-        top: 10vh;    
-        bottom: 10vh;
-
-    }
-    
 
 }
