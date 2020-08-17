@@ -40,7 +40,8 @@ td{
 
 .resultlayout{
     margin: 0 auto;
-    width: 400px;
+    max-width: 400px;
+    width: 90%;
     padding-bottom: 40px;
 }
 
