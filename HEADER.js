@@ -10,7 +10,7 @@ $(document).ready(function(){
 
     let windowwidth = $('html').width();
 
-    if( windowwidth < 991 ){
+    if( windowwidth <= 991 ){
 
         $('.maintitle').css('display','none');
 

@@ -131,16 +131,22 @@ body{
     
 @media screen and (max-width:767px) and (min-width:576px){
 
-    .content{
-        height: 50vh;
+    .back1 ,.back2{
+        background-position: 50% 0%;
 
     }
 
-    .singer , .singer_reverse{
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+    .content{
+        width: 100%;
 
+    }
+
+
+    .singer , .singer_reverse{
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        height: 1000px;
 
     }
 
@@ -148,11 +154,6 @@ body{
         max-width: 500px;
         width: 100%;
 
-    }
-
-
-    .engname{
-        font-size: 32px;
     }
 
 }
@@ -169,20 +170,51 @@ body{
 
     }
 
+
     .singer , .singer_reverse{
         flex-direction: column;
         justify-content: start;
         align-items: center;
-
-        padding-bottom: 100px;
+        height: 1000px;
 
     }
+
+    .singer img , .singer_reverse img{
+        max-width: 500px;
+        width: 100%;
+
+    }
+
+    
 
 }
 
 @media screen and (max-width:1200px) and (min-width:993px){
 
+    .back1 ,.back2{
+        background-position: 50% 0%;
 
+    }
+
+    .content{
+        width: 100%;
+
+    }
+
+
+    .singer , .singer_reverse{
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        height: 1000px;
+
+    }
+
+    .singer img , .singer_reverse img{
+        max-width: 500px;
+        width: 100%;
+
+    }
 
 }
 
