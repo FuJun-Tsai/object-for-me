@@ -100,6 +100,11 @@ h4{
         
     }
 
+    .banner2 ,.banner4{
+        background-position: 75%,0;
+
+    }
+
     .banner1{
         height: 100vh;
         
@@ -137,7 +142,13 @@ h4{
 @media screen and (max-width:767px) and (min-width:576px){
 
     .banner1,.banner2,.banner3,.banner4{
-        background-image: none;
+        /* background-image: none; */
+        background-size: cover;
+        
+    }
+
+    .banner2 ,.banner4{
+        background-position: 75%,0;
 
     }
 
@@ -175,8 +186,13 @@ h4{
 @media screen and (max-width:992px) and (min-width:768px){
 
     .banner1,.banner2,.banner3,.banner4{
-        background-image: none;
-        /* background-repeat: no-repeat; */
+        /* background-image: none; */
+        background-size: cover;
+        
+    }
+
+    .banner2 ,.banner4{
+        background-position: 75%,0;
 
     }
 
