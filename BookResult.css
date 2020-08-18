@@ -99,6 +99,14 @@ td{
 
     }
 
+    h5{
+        display: none;
+    }
+
+    h6{
+        font-size: 32px;
+    }
+
 }
 
 @media screen and (min-width:1200px){

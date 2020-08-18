@@ -17,4 +17,19 @@ $(document).ready(function(){
 
     }
 
+    // $('.turnL').click(function(){
+    //     function weekchange();       
+
+    // });
+
+    // $('.turnR').click(function(){
+    //     function weekchange();
+
+    // });
+
+    //     weekchange(){
+            
+    //     }
+
+
 });

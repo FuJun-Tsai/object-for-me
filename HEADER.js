@@ -8,18 +8,30 @@ $(document).ready(function(){
 
     });
 
-    let windowwidth = $('html').width();
+    windowchange();
 
-    if( windowwidth <= 991 ){
+    function windowchange() {      
 
-        $('.maintitle').css('display','none');
+        let windowwidth = $('html').width();
 
-    }else if( windowwidth > 992){
+        if( windowwidth <= 991 ){
 
-        $('.maintitlephone').css('display','none');
+            $('.maintitle').css('display','none');
+
+        }else if( windowwidth > 992){
+
+            $('.maintitlephone').css('display','none');
+
+        }
 
     }
-    
+
+    $(window).resize(function(){
+
+        windowchange();
+        
+    });
+
 });
 
 
