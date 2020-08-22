@@ -87,7 +87,7 @@
                         
                         <div> 
                             <label for="date">日期：</label>
-                            <input type="date" name="" id=""> 
+                            <input type="date" name="" id="date"> 
                         </div>
 
                         <div>
@@ -105,64 +105,64 @@
                     <h2> Step2</h2>
                     <div class="bookwindow">
                         <div class="Ablock">
-                            <button class="A">A</button>
-                            <button class="A1 box"></button>
-                            <button class="A2 box"></button>
-                            <button class="A3 box"></button>
-                            <button class="A4 box"></button>
-                            <button class="A5 box"></button>
-                            <button class="A6 box"></button>
-                            <button class="A7 box"></button>
-                            <button class="A8 box"></button>
-                            <button class="A9 box"></button>
+                            <button class="A" id="A">A</button>
+                            <button class="A1 box" id="a1"></button>
+                            <button class="A2 box" id="a2"></button>
+                            <button class="A3 box" id="a3"></button>
+                            <button class="A4 box" id="a4"></button>
+                            <button class="A5 box" id="a5"></button>
+                            <button class="A6 box" id="a6"></button>
+                            <button class="A7 box" id="a7"></button>
+                            <button class="A8 box" id="a8"></button>
+                            <button class="A9 box" id="a9"></button>
                         </div>
 
                         <div class="block B">
-                            <button class="b">B</button>
-                            <button class="b1"></button>
-                            <button class="b2"></button>
-                            <button class="b3"></button>
-                            <button class="b4"></button>
+                            <button class="b" id="B">B</button>
+                            <button class="b1 x" id="b1"></button>
+                            <button class="b2 x" id="b2"></button>
+                            <button class="b3 x" id="b3"></button>
+                            <button class="b4 x" id="b4"></button>
                         </div>
 
                         <div class="block C">
-                            <button class="b">C</button>
-                            <button class="b1"></button>
-                            <button class="b2"></button>
-                            <button class="b3"></button>
-                            <button class="b4"></button>
+                            <button class="b" id="C">C</button>
+                            <button class="b1 x" id="c1"></button>
+                            <button class="b2 x" id="c2"></button>
+                            <button class="b3 x" id="c3"></button>
+                            <button class="b4 x" id="c4"></button>
                         </div>
 
                         <div class="block D">
-                            <button class="b">D</button>
-                            <button class="b1"></button>
-                            <button class="b2"></button>
-                            <button class="b3"></button>
-                            <button class="b4"></button>
+                            <button class="b" id="D">D</button>
+                            <button class="b1 x" id="d1"></button>
+                            <button class="b2 x" id="d2"></button>
+                            <button class="b3 x" id="d3"></button>
+                            <button class="b4 x" id="d4"></button>
                         </div>
 
                         <div class="block E">
-                            <button class="b">E</button>
-                            <button class="b1"></button>
-                            <button class="b2"></button>
-                            <button class="b3"></button>
-                            <button class="b4"></button>
+                            <button class="b" id="E">E</button>
+                            <button class="b1 x" id="e1"></button>
+                            <button class="b2 x" id="e2"></button>
+                            <button class="b3 x" id="e3"></button>
+                            <button class="b4 x" id="e4"></button>
                         </div>
 
                         <div class="block F">
-                            <button class="b">F</button>
-                            <button class="b1"></button>
-                            <button class="b2"></button>
-                            <button class="b3"></button>
-                            <button class="b4"></button>
+                            <button class="b" id="F">F</button>
+                            <button class="b1 x" id="f1"></button>
+                            <button class="b2 x" id="f2"></button>
+                            <button class="b3 x" id="f3"></button>
+                            <button class="b4 x" id="f4"></button>
                         </div>
 
                         <div class="block G">
-                            <button class="b">G</button>
-                            <button class="b1"></button>
-                            <button class="b2"></button>
-                            <button class="b3"></button>
-                            <button class="b4"></button>
+                            <button class="b" id="G">G</button>
+                            <button class="b1 x" id="g1"></button>
+                            <button class="b2 x" id="g2"></button>
+                            <button class="b3 x" id="g3"></button>
+                            <button class="b4 x" id="g4"></button>
                         </div>
 
                         <div class="show"><p>舞台</p></div>
@@ -179,12 +179,12 @@
                     <div class="daytime">
                         <div>
                             <label for="date">姓名：</label>
-                            <input type="text" name="" id="">
+                            <input type="text" name="" id="name">
                         </div>
                         
                         <div>
                             <label for="time">電話：</label>
-                            <input type="text" name="" id="">
+                            <input type="text" name="" id="phone">
                         </div>
                     </div>
                 </div>
@@ -195,12 +195,12 @@
                 <div class="result">
                     <button class="btn_drawer">展開</button>
 
-                    <p>日期：<span>2020/07/31</span></p>
-                    <p>時間：<span>19:00</span></p>
-                    <p>桌號：<span>B</span></p>
-                    <p>人數：<span>4</span></p>
-                    <p>姓名：<span>王曉明</span></p>
-                    <p>電話：<span>0987-654-321</span></p>
+                    <p>日期：<span class="date"></span></p>
+                    <p>時間：<span class="time"></span></p>
+                    <p>桌號：<span class="tables"></span></p>
+                    <p>人數：<span class="mans"></span></p>
+                    <p>姓名：<span class="name"></span></p>
+                    <p>電話：<span class="phone"></span></p>
                 </div>
 
                 <footer>

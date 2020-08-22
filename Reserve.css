@@ -1,3 +1,5 @@
+/* x for js must don't del*/
+
 body{
     background-image: url("./pic/eff.png");
     background-color: black;
@@ -51,6 +53,16 @@ option{
     background-size: contain;
 
 }
+
+.selected{
+    color: hsla(0, 0%, 0%, .7);
+    background-color: #FFB366;
+
+}
+
+/* .unselect{
+
+} */
 
 P.remark{
     font-size: 16px;

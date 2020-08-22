@@ -5,6 +5,13 @@ body{
 
 /* banner */
 
+.banscreen{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
 .banner{
     background-image: url("./pic/RIIN.jpg");
     position: relative;
