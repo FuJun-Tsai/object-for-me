@@ -60,9 +60,11 @@ option{
 
 }
 
-/* .unselect{
+.unselect{
+    color: hsla(0, 0%, 0%, .7);
+    background-color: hsla(0, 0%, 30%, 1);
 
-} */
+}
 
 P.remark{
     font-size: 16px;
@@ -316,7 +318,7 @@ select ,input[type="text"] ,input[type="date"] {
         flex-direction: column;
         justify-content: space-around;
         font-size: 0;
-        width: 300px;
+        min-width: 300px;
         background-color: hsla(0,0%,30%,1);
         position: fixed;
         right: 0;
@@ -325,8 +327,6 @@ select ,input[type="text"] ,input[type="date"] {
         transition-duration: .5s;
         border-radius: 8px 0 0 8px;
 
-
-        
     }
 
     .btn_drawer{

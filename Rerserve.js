@@ -1,9 +1,14 @@
 $(document).ready(function(){
 
   // 訂位桌RWD
-
-    $(window).resize(function(){
+  winchange()
   
+    $(window).resize(function(){
+      winchange()
+    });
+  
+    function winchange(){
+
       let screen = $('html').width();
     // screen = 螢幕寬
       if( screen < 700){
@@ -16,7 +21,7 @@ $(document).ready(function(){
 
       }
 
-    });
+    }
     // 寬小於700後 直立呈現
   // /訂位桌RWD
 
@@ -41,7 +46,6 @@ $(document).ready(function(){
 
       if($(this).attr('id').length == 1 ){ 
       let NOid = $(this).attr('id');
-
         $(`.${NOid} button`).toggleClass('selected');
 
       }else{
@@ -51,12 +55,6 @@ $(document).ready(function(){
       
       let from = $(this).attr('id');
       let picking = $('.x.selected').length;
-
-      // if ($('.tables').text() == ''){
-      //   $('.tables').text(from).append(',');
-      // }else{
-      //   $('.tables').append(from).append(',');
-      // }
 
       $('.mans').text(picking);
 
