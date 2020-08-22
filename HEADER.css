@@ -119,6 +119,16 @@ a{
 
 }
 
+.here{
+    color: #FFB366 ;
+    
+}
+
+.line a{
+    text-shadow: 6px 6px 12px hsla(0, 0%, 0%, 1);
+
+}
+
 .maintitle {
     display: flex;
     flex-direction: row;
@@ -192,8 +202,56 @@ a{
     transform: translate(-50%,1px);
 
 }
+
+/* 底線 */
+
+.line{
+    position: relative;
+
+}
+
+.line>a::after{
+    content: "";
+    position: absolute;
+    left: 15%;
+    right: 85%;
+    bottom: 0;
+    border-bottom: 1px solid transparent;
+    transition: .5s;
+
+}
+
+.line>a:hover::after{
+    left: 15%;
+    right: 15%;
+    border-bottom: 1px solid hsla(28, 25.5%, 80%, 1);
+
+}
+
+/* /底線 */
+
+.sub::before{
+    position: absolute;
+    content: '';
+    left: 15%;
+    top: 50%;
+    transform: translate(0,-50%);
+    font-size: 1px;
+    border-top: 16px solid #FFEEE4;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+
+}
+
 /* /導覽列主次標 */
 @media screen and (max-width:575px){
+
+    h1,h2,h3,h4,h5,h6{
+        padding:20px
+
+    }
+    
+
     h1{
         font-size: 40px;
       
@@ -262,7 +320,7 @@ a{
 
     .maintitlephone li{
         text-align: center;
-        margin-bottom: 5vh;
+        margin: 5vh 0;
 
     }
 
@@ -325,7 +383,7 @@ a{
     }
 
     .maintitlephone li{
-        margin-bottom: 10vh;
+        margin: 5vh 0;
         text-align: center;
     }
 
@@ -388,7 +446,7 @@ a{
     }
 
     .maintitlephone li{
-        margin-bottom: 10vh;
+        margin: 10vh 0;
         text-align: center;
     }
 

@@ -11,25 +11,49 @@ $(document).ready(function(){
         let planteggheight = $('html').width() * 1000 / 1920 ;
         $('.EggPlantEgg').css('height',planteggheight);
 
-            $('.day').addClass('hide');
-            $('.day:nth(0)').toggleClass('hide');
+            // let calindex = $('.day:nth(1) .showname').length; 
+            // alert(calindex);
+            let week = 0;
 
+            $(`.day`).not(`.day:nth(${week})`).addClass('hide');
+
+            $('.turnL').on('click',function(){
+                calchange('prev');
+            });            
+
+
+            $('.turnR').on('click',function(){
+                calchange('next');
+            });
+            
+            // $(`.day td:nth(0)`).append('<span>(Mon)</span>');
+            // $('td:nth(0) span').css({color:'gray'});
+            
+            function calchange(e){
+                
+                if(e == 'next'){
+                    week = week + 1;
+                    
+                }else if(e == 'prev'){
+                    week = week - 1;
+                    
+                }
+                
+                if(week == 5){
+                    week = 0;
+                }else if(week == -1){
+                    week = 4;
+                }
+                
+                
+                $(`.day:nth(${week})`).removeClass('hide');
+                $(`.day`).not(`.day:nth(${week})`).addClass('hide');
+                
+                
+            }
 
     }
 
-    // $('.turnL').click(function(){
-    //     function weekchange();       
-
-    // });
-
-    // $('.turnR').click(function(){
-    //     function weekchange();
-
-    // });
-
-    //     weekchange(){
-            
-    //     }
 
 
 });

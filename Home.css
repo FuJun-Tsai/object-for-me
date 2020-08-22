@@ -222,7 +222,6 @@ body{
         background-size: contain;
         background-repeat: no-repeat;
         
-
     }
 
     h1 , h2{
@@ -423,11 +422,6 @@ body{
         height: 420px;
     }
 
-    h1 , h2{
-        padding: 20px;
-
-    }
-
     .show{
         width: 100%;
         
@@ -479,6 +473,7 @@ body{
 
     .drink_detail{
         padding-bottom: 100px;
+        
     }
 
     .drink_text{
@@ -493,6 +488,7 @@ body{
 
     .food_detail{
         padding-bottom: 100px;
+
     }
 
     .food_detail img , .food_text{
@@ -505,21 +501,21 @@ body{
 @media screen and (max-width:1200px) and (min-width:991px){
 
     .slogan{
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        
+        top: 50%;
+        left: 10%;
+        transform: translate(-10%,-50%);
+    
     }
 
     .slogan p{
-        font-size: 28px;
+        font-size: 32px;
         
     }
 
     .banner{
         background-size: contain;
         background-repeat: no-repeat;
-        height: 420px;
+
     }
 
     h1 , h2{

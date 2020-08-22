@@ -7,14 +7,19 @@ $(document).ready(function(){
     
     // }
 
-    $('.page').click(function(){
-        $('.page').removeClass('here');
-        $('.page').addClass('hide');
-        $(this).removeClass('hide');
-        $(this).addClass('here');
+    // $('.page').click(function(){
+    //     $('.page').removeClass('thispage');
+    //     $('.page').addClass('hide');
+    //     $(this).removeClass('hide');
+    //     $(this).addClass('thispage');
 
+    // });
+
+    
+    $('.page').on('click',function(){
+        $(this).removeClass('hide').addClass('thispage');        
+        $('.page').not(this).removeClass('thispage').addClass('hide');
     });
-
 
 
 });
