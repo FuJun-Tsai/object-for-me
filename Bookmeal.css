@@ -35,6 +35,7 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-bottom: 200px;
 
 }
 
@@ -63,11 +64,6 @@ div.side, div.booked{
     bottom: 40px;
     left: 50%;
     transform: translate(-50%,0);
-
-}
-
-.item{
-    margin-bottom: 40px;
 
 }
 
@@ -156,7 +152,7 @@ div.side, div.booked{
     background-size: contain;
     visibility: hidden;
 
-    left: -8px;
+    left: -4px;
     top: 50%;
     transform: translate(-100%,-50%);
 
@@ -187,7 +183,7 @@ div.side, div.booked{
 
 .booked{
     position: sticky;
-    top: 10%;    
+    top: 10%;
     width: 540px;
     height: 360px;
     /* background-color: #383A3F; */
