@@ -373,14 +373,14 @@ select ,input[type="text"] ,input[type="date"] {
 
     }
 
-    input[type="submit"]{
-        width: 100px; 
-        margin: 0 auto;
-        display: block;
+    select{
+        border-radius: 8px;
         font-size: 24px;
-        background-color: black;
-        border-radius: 24px;
-        
+        padding: 0px 20px ;
+        color:hsla(0,53.4%,22.7%,1);
+        background-color: hsla(28,25.5%,80%,1);
+        font-weight: bold; 
+
     }
 
     div.result.-open{

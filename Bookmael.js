@@ -1,5 +1,19 @@
 $(document).ready(function(){
 
+    // var result = "";
+    // try{
+    //     var refDoc = $(window.opener.document);
+
+    //     var value = $(".bookingbutton",refDoc).val();
+
+    //     if (value != null || typeof value != "undefined")
+    //     result = value;
+
+    // }catch(e){
+    //     result = e.message;
+    // }
+    // $('#date').text(result);
+
     // 資訊總整方塊
     $('.btn_drawer').click(function(){
 
@@ -64,5 +78,47 @@ $(document).ready(function(){
 
     });
 
+    // 資訊傳入
+
+    show()
+
+    function show () {
+     
+        //URL
+        var url = location.href;
+        
+        //取得問號之後的值
+        var temp = url.split("?");
+    
+        //將值再度分開
+        var vars = temp[1].split("&");
+        // alert(vars);
+        //一一顯示出來
+        for (var i = 0; i < vars.length; i++) {
+            $(`.result p:nth-child(${i+2}) span`).text(vars[i]);
+
+            // alert(i+1);
+            //  alert(vars[i]);
+        };
+    
+    }
+
+    // /資訊傳入
+
+    // 資訊傳送
+
+        $('.bookingbutton').click(function(){
+            let R1 = $('.date').text();
+            let R2 = $('.time').text();
+            let R3 = $('.tables').text();
+            let R4 = $('.mans').text();
+            let R5 = $('.name').text();
+            let R6 = $('.phone').text();
+    
+            $(this).closest('a').attr('href',`./Bookresult.html?${R1}&${R2}&${R3}&${R4}&${R5}&${R6}`);
+    
+        });
+    
+    // /資訊傳送
 
 });
