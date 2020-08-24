@@ -64,8 +64,18 @@ $(document).ready(function(){
         for ( i=0 ; i<picking ; i+=1){
           let from = $(`.x.selected:nth(${i})`).attr('id');
           desk[i] = from;
+
           $('.tables').text(desk);
-          
+
+          //暫時不破版
+          $('.tables').closest('p').css({
+            width: '300px',
+            overflowX: 'scroll',
+
+          });
+          // /暫時不破版
+
+
         }
 
         }else{
@@ -74,7 +84,6 @@ $(document).ready(function(){
       }  
 
     });
-
 
       // /資訊總整
 

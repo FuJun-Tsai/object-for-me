@@ -24,25 +24,36 @@ $(document).ready(function(){
         </td>
         <td class="price">${ddd}</td>
         </tr>`);
+
+        if( $('.tablectrl').height()>300 ){
+            
+            $('.tablectrl').css({
+                height: '300px',
+                overflowY : 'scroll',
+
+            });
+
+        }
+
         $('.bookedname span').remove();
 
         // let eee = $('td').parseInt();
         // alert(eee);
 
-        fff = $('table tr').length*100/3;
+        // fff = $('table tr').length*100/3;
 
-        for ( let i=0 ; i<fff ; i+=1){
-            let ggg;
-            let hhh = $(`.qua:nth${i}`).text();
-            let iii = $(`.price:nth${i}`).text();
-            ggg = hhh * iii;
-            jjj = ggg + jjj;
-            alert(hhh);
+        // for ( let i=0 ; i<fff ; i+=1){
+        //     let ggg;
+        //     let hhh = $(`.qua:nth${i}`).text();
+        //     let iii = $(`.price:nth${i}`).text();
+        //     ggg = hhh * iii;
+        //     jjj = ggg + jjj;
+        //     alert(hhh);
 
-            $('.total span').text(jjj);
-        }
+        //     $('.total span').text(jjj);
+        // }
 
-        $('.total span').text(fff);
+        // $('.total span').text(fff);
 
     });
 
