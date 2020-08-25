@@ -1,4 +1,6 @@
 $(document).ready(function(){
+    // 暫時的
+    Calculation()
 
     // var result = "";
     // try{
@@ -22,6 +24,8 @@ $(document).ready(function(){
     });
     // /資訊總整方塊
 
+
+    // 新增商品
     $('.plus').on('click',function(){ // -
 
         let aaa = $(this).closest('.drink').index(); //0~2
@@ -36,7 +40,7 @@ $(document).ready(function(){
             <button class="minus_table"></button>
             <button class="plus_table"></button>
         </td>
-        <td class="price">${ddd}</td>
+        <td><span class="price">${ddd}</span></td>
         </tr>`);
 
         if( $('.tablectrl').height()>300 ){
@@ -69,14 +73,41 @@ $(document).ready(function(){
 
         // $('.total span').text(fff);
 
-    });
-
-    $('.minus').on('click',function(){ // +
-
-        let aaa = $(this).closest('.drink').index(); //0~2
-        let bbb = $(this).closest('.item').index(); //2~11
+        Calculation()
 
     });
+    // /新增商品
+
+    // 購物車清單
+    $('.minus_table').click(function(){
+
+        $(this).closest('tr').remove();
+
+    });
+
+    $('.plus_table').click(function(){
+
+        // let qua = $(this).closest('.qua').text();
+        // alert(qua);
+
+    });
+
+    function Calculation(){
+        let xxx = $('table tr').length;
+        for( i=0 ; i<xxx ; i+=1){
+            let qua ;
+            let total = 0; 
+            let price;
+
+            qua = parseInt($(`tr:nth-child(${i+1})`).find('.qua').text());
+            price =  parseInt($(`tr:nth-child(${i+1})`).find('.price').text());
+            total = total + qua * price; 
+
+            $('.total span').text(total);
+        }
+    }
+
+    // /購物車清單
 
     // 資訊傳入
 
@@ -108,6 +139,7 @@ $(document).ready(function(){
     // 資訊傳送
 
         $('.bookingbutton').click(function(){
+
             let R1 = $('.date').text();
             let R2 = $('.time').text();
             let R3 = $('.tables').text();

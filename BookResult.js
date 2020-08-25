@@ -4,7 +4,6 @@ $(document).ready(function(){
 
     $('.resultlayout p').click(function(){
         let XX = $(this).index();
-        alert(XX);
     });
 
     show()
@@ -19,7 +18,6 @@ $(document).ready(function(){
     
         //將值再度分開
         var vars = temp[1].split("&");
-        alert(vars);
         //一一顯示出來
         for (var i = 0; i < vars.length ; i+=1) {
             $(`.resultlayout p:nth-child(${i+1}) span`).text(vars[i]);

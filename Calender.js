@@ -1,5 +1,39 @@
 $(document).ready(function(){
-    
+
+    banresize()
+
+    $(window).resize(function(){
+        banresize()
+    });
+
+    function banresize(){
+        let winwid = $(window).width();
+        let winhei = winwid * 1000 / 1920;
+        $('.banscreen').height(winhei);
+        $('.banner1').height(winhei);
+    }
+
+    let ban = $('.banctrl>div').length
+    let winwid = $(window).width();
+
+    // ('.banctrl>div').length;
+
+    for( i=0 ; i<ban ;i+=1){
+        $('.ctrlban').append('<li></li>');
+    }
+
+    $('.banctrl').width(winwid*ban);
+
+    $('.ctrlban li').click(function(){
+        let index = $(this).index()*-100;
+        
+        $('.banctrl').animate({
+            left: `${index}vw` ,
+
+        });
+
+    });
+
     if ( $('html').width() < 1200){
         
         let bannerheight = $('html').width() * 1495 / 2048; 

@@ -6,17 +6,33 @@ body{
 /* banner */
 
 .banscreen{
-    position: relative;
-    height: 100vh;
     overflow: hidden;
+    height: 100vh;
+    padding-top: 100px;
+    position: relative;
 
 }
 
-.banner{
-    background-image: url("./pic/RIIN.jpg");
-    position: relative;
+.banctrl{
+    position: absolute;
+    font-size: 0;
+    display: flex;
+    flex-direction: row;
     height: 100vh;
-    background-position: 0 100px;
+    /* left: -1920px; */
+    
+}
+
+.banner{
+    position: relative;
+    width: 100vw;
+    
+}
+
+.banner1 , .banner2{
+    position: relative;
+    z-index: -30;
+    height: 100vh;
 
 }
 
@@ -24,12 +40,11 @@ body{
     position: absolute;
     top: 50%;
     right: 10%;
-    z-index: 29;
+    z-index: 30;
     transform: translate(10%,-50%);
     background-color: hsla(0,0%,0%,.7);
     padding: 16px;
     border-radius: 16px;
-
 
 }
 
@@ -41,6 +56,35 @@ body{
 .slogan span{
     color: #FFB366;
     
+}
+
+.banner2 .name{
+    position: absolute;
+    top: 25%;
+    left: 75%;
+    z-index: 29;
+    transform: translate(-75%,-25%);
+    background-color: hsla(0,0%,0%,.7);
+
+}
+
+.ctrlban{
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    transform: translate(-50%,-100%);
+    text-align: center;
+
+}
+
+.ctrlban li{
+    width: 24px;
+    height: 24px;
+    margin: 0 20px;
+    border-radius: 50%;
+    background-color: #FFB366;
+    display: inline-block;
+
 }
 
 /* /banner */
