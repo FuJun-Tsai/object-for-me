@@ -21,15 +21,20 @@ $(document).ready(function(){
 
 });
 
-var controller = new ScrollMagic.Controller();
-var tlscroll =  new TimelineMax();
-tlscroll.to('.scoll', 1, {x: 50})
-var scense01 = new ScrollMagic.Scene({
-    triggerElement: '#trigger01',
-    triggerHook: 0.5,
-    reverse : true, // 動畫返回 true/不返回false
-    offset : -300,  // 改變start觸發點
-    duration : 500 //距離
+// if($(window).width()<576){
+//     var controller = new ScrollMagic.Controller();
+//     var tlscroll =  new TimelineMax();
+//     tlscroll.from('.scoll1', 1, {x: -100,alpha:0 })
+//     .from('.scoll2', 1, {x: -100,alpha:0 })
+//     .from('.scoll3', 1, {x: -100,alpha:0 })
+//     var scense01 = new ScrollMagic.Scene({
+//         triggerElement: '#trigger01',
+//         triggerHook: 0.5,
+//         reverse : true, // 動畫返回 true/不返回false
+//         offset : -300,  // 改變start觸發點
+//         duration : 500 //距離
 
-}).setTween(tlscroll).addIndicators().addTo(controller);
-
+//     }).setTween(tlscroll)
+//     .addTo(controller)
+//     .addIndicators();
+// }

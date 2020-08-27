@@ -29,8 +29,9 @@ $(document).ready(function(){
 
         $('table').append(`<tr>
         <td class="bookedname">${ccc}</td>
-        <td>*<span class="qua">1</span>
+        <td>
             <button class="minus_table"></button>
+            *<span class="qua">1</span>
             <button class="plus_table"></button>
         </td>
         <td><span class="price">${ddd}</span></td>
@@ -81,6 +82,9 @@ $(document).ready(function(){
 
         minus()
 
+        plus()
+
+
     });
     // /新增商品
 
@@ -88,39 +92,60 @@ $(document).ready(function(){
 
     minus()
 
+    plus()
+
+    Calculation()
+
     function minus(){
 
         $('.minus_table').click(function(){
+            let qua = parseInt($(this).closest('td').find('.qua').text());
+            if(qua>1){
+                 qua-=1;
+                $(this).closest('td').find('.qua').text(qua);
 
-            $(this).closest('tr').remove() ;
+            }else{
+                $(this).closest('tr').remove(); 
 
+            }
+            
         });
 
     }
 
-    $('.plus_table').click(function(){
+    function plus(){
 
-        let qua = $(this).closest('.qua').text();
-        alert(qua);
+        $('.plus_table').click(function(){
 
-    });
+            let qua = parseInt($(this).parent().find('.qua').text());
+            qua+=1;
+            $(this).closest('td').find('.qua').text(qua);
+            
+        });
+
+
+    }
 
     function Calculation(){
-        let xxx = $('table tr').length;
+        let xxx = $('#end tr').length;
         for( i=0 ; i<xxx ; i+=1){
             let qua ;
             let total = 0; 
             let price;
 
-            qua = parseInt($(`tr:nth-child(${i+1})`).find('.qua').text());
-            price =  parseInt($(`tr:nth-child(${i+1})`).find('.price').text());
+            qua = parseInt($(`#end tr:nth(${i}) .qua`).text());
+            price = parseInt($(`#end tr:nth(${i}) .price`).text());
             total = total + qua * price; 
+            // alert(price);
+
 
             $('.total span').text(total);
 
         }
 
     }
+
+    
 
     // /購物車清單
 
@@ -161,6 +186,8 @@ $(document).ready(function(){
         $('.lightbox').show();
 
         $('.linghtback').css('top','0');
+
+        $('#end button').remove();
 
     });
 

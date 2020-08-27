@@ -155,6 +155,8 @@ div.side, div.booked{
     left: -4px;
     top: 50%;
     transform: translate(-100%,-50%);
+    display: none;
+
 
 }
 
@@ -422,6 +424,7 @@ td:nth-child(3){
         width: 28px;
         height: 28px;
         visibility: visible;
+        left: -12px;
 
     }
 
@@ -432,8 +435,8 @@ td:nth-child(3){
     }
 
     .plus_table , .minus_table{
-        width: 28px;
-        height: 28px;
+        width: 24px;
+        height: 24px;
 
     }
 
@@ -484,7 +487,52 @@ td:nth-child(3){
 
 }
 
-@media screen and (max-width:992px) and (min-width:768px){
+@media screen and (max-width:991px) and (min-width:768px){
+
+    h5{
+        padding: 20px;
+
+    }
+
+    .content{
+        width: 100%;
+        flex-direction: column;
+
+    }
+
+    .drink{
+        margin-left: 50px;
+
+    }
+
+    .side{
+        width: 90%;
+        margin-bottom: 0px;
+
+    }
+
+    .plus , .minus{
+        width: 28px;
+        height: 28px;
+        visibility: visible;
+
+    }
+
+    .booked , .lightbox{
+        width: 100%;
+        margin-bottom: 200px;
+
+    }
+
+    .plus_table , .minus_table{
+        width: 28px;
+        height: 28px;
+
+    }
+
+}
+
+@media screen and (max-width:1200px) and (min-width:992px){
 
     h5{
         padding: 20px;
