@@ -26,13 +26,12 @@ body{
 .banner{
     position: relative;
     width: 100vw;
-    
+
 }
 
-.banner1 , .banner2{
+.banner1 {
     position: relative;
     z-index: -30;
-    height: 100vh;
 
 }
 
@@ -58,11 +57,10 @@ body{
     
 }
 
-.banner2 .name{
+.banner1 .name{
     position: absolute;
-    top: 25%;
-    left: 75%;
     z-index: 29;
+    left: 20%;
     transform: translate(-75%,-25%);
     background-color: hsla(0,0%,0%,.7);
 
@@ -72,7 +70,7 @@ body{
     position: absolute;
     left: 50%;
     bottom: 0%;
-    transform: translate(-50%,-100%);
+    transform: translate(-50%,0%);
     text-align: center;
 
 }
@@ -82,8 +80,16 @@ body{
     height: 24px;
     margin: 0 20px;
     border-radius: 50%;
-    background-color: #FFB366;
+    background-color: #383A3F;
     display: inline-block;
+    cursor: pointer;
+    border: 2px solid #383A3F;
+    box-shadow: 2px 2px 4px black;
+
+}
+
+.lifocus{
+    background-color: #FFB366 !important;
 
 }
 
@@ -114,6 +120,7 @@ body{
 
 .turnL , .turnR{
     cursor: pointer;    
+    
 }
 
 .month h6{
@@ -233,6 +240,13 @@ tr:last-child td{
         
     }
 
+    .ctrlban li{
+        width: 12px;
+        height: 12px;
+        margin: 0 12px;
+    
+    }
+
     .calendar{
         width: 90%;
  
@@ -285,18 +299,16 @@ tr:last-child td{
     }
 
     .name{
-        left: 60%;
+        left: 75% !important;
         top: 20%;
         transform: translate(0,0);
 
     }
     
     .name h3{
-        font-size: 24px;
+        font-size: 16px;
         padding: 0;
     }
-
-
 
 }
     
@@ -312,6 +324,13 @@ tr:last-child td{
     .slogan p{
         font-size: 24px;
         
+    }
+
+    .ctrlban li{
+        width: 12px;
+        height: 12px;
+        margin: 0 12px;
+    
     }
 
     .calendar{
@@ -355,12 +374,12 @@ tr:last-child td{
     }
 
     .name{
-        left: 60%;
+        left: 75% !important;
         top: 20%;
         transform: translate(0,0);
 
     }
-    
+
     .name h3{
         font-size: 24px;
         
@@ -381,6 +400,13 @@ tr:last-child td{
         
     }
 
+    .ctrlban li{
+        width: 16px;
+        height: 16px;
+        margin: 0 16px;
+    
+    }
+
     .calendar{
         width: 90%;
  
@@ -422,7 +448,7 @@ tr:last-child td{
     }
 
     .name{
-        left: 60%;
+        left: 75% !important;
         top: 20%;
         transform: translate(0,0);
 
@@ -484,16 +510,11 @@ tr:last-child td{
     }
 
     .text{
-        display: none;
-
+        display: none;    
+            
     }
 
-    .name{
-        left: 60%;
-        top: 20%;
-        transform: translate(0,0);
 
-    }
     
     .name h3{
         font-size: 24px;

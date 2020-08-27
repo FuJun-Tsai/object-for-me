@@ -11,7 +11,7 @@ $(document).ready(function(){
 
       let screen = $('html').width();
       // screen = 螢幕寬
-      if( screen < 700){
+      if( screen < 769){
 
         let bookingheight = screen * 12 / 7 ;
 
@@ -35,11 +35,18 @@ $(document).ready(function(){
     // /資訊總整方塊
 
     // 資訊總整
-    $('input').blur(function(){
+    $('input').change(function(){
       let from = $(this).attr('id');
       let text = $(this).val();
 
       $(`.${from}`).text(text);
+
+    });
+
+    $('#time').change(function(){
+      let date=$("#time :selected").text();
+      
+      $('.time').text(date);
 
     });
 
@@ -54,7 +61,7 @@ $(document).ready(function(){
 
     }
 
-    let from = $(this).attr('id');
+    // let from = $(this).attr('id');
     let picking = $('.x.selected').length;
 
     $('.mans').text(picking);
@@ -68,11 +75,12 @@ $(document).ready(function(){
         desk[i] = from;
 
         $('.tables').text(desk);
-
+        let long = desk.join('');
+        
       //暫時不破版
         $('.tables').closest('p').css({
           width: '300px',
-          overflowX: 'scroll',
+          overflowX: 'auto',
 
         });
     // /暫時不破版

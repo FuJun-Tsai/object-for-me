@@ -17,7 +17,7 @@ body{
 
 .slogan{
     position: absolute;
-    z-index: 29;
+    z-index: 1;
 
 }
 
@@ -203,6 +203,16 @@ body{
 }
 
 /* /food */
+
+/* 動畫 */
+
+
+.scoll{
+    display: inline-block;
+
+
+}
+/* /動畫 */
 
 @media screen and (max-width:575px){
 

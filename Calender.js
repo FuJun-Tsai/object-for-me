@@ -13,18 +13,23 @@ $(document).ready(function(){
         $('.banner1').height(winhei);
     }
 
-    let ban = $('.banctrl>div').length
+    let ban = $('.banctrl>div').length;
     let winwid = $(window).width();
 
     // ('.banctrl>div').length;
 
     for( i=0 ; i<ban ;i+=1){
         $('.ctrlban').append('<li></li>');
+        
     }
 
     $('.banctrl').width(winwid*ban);
 
+    $('.ctrlban li:nth-child(1)').addClass('lifocus');
+
     $('.ctrlban li').click(function(){
+        $(this).addClass('lifocus');
+        $('.ctrlban li').not(this).removeClass('lifocus');
         let index = $(this).index()*-100;
         
         $('.banctrl').animate({
@@ -33,6 +38,8 @@ $(document).ready(function(){
         });
 
     });
+    
+    $('.ctrlban li').addClass('liblur');
 
     if ( $('html').width() < 1200){
         

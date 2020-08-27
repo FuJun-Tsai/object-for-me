@@ -225,6 +225,7 @@ tr:last-child{
 
 td{
     padding: 4px 0;
+
 }
 
 td:nth-child(1){
@@ -318,36 +319,76 @@ td:nth-child(3){
         border: none;
 
     }
-.result div{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
-    margin: 0 auto;
-}
 
-.result p ,.result label{
-    font-size: 24px;
-    padding: 4px;
+    .result div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        margin: 0 auto;
+    }
 
-}
+    .result p ,.result label{
+        font-size: 24px;
+        padding: 4px;
 
-.result input{
-    background-color: #515151;
-    outline: none;
-    border: 0;
-    border-bottom: 1px solid white;
-    text-align: center;
-    font-size: 16px;
+    }
 
-}
+    .result input{
+        background-color: #515151;
+        outline: none;
+        border: 0;
+        border-bottom: 1px solid white;
+        text-align: center;
+        font-size: 16px;
 
+    }
 
+    .result.-open{
+        transform: translate(100%, -50%);
 
-div.result.-open{
-    transform: translate(100%, -50%);
+    }
 
-}
+    .linghtback{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: hsla(0,0%,0%,.7);
+        z-index: 29;
+
+    }
+
+    .lightbox{
+        position: fixed;
+        top: 40%;
+        left: 50%;
+        border: 1px solid white;
+        transform: translate(-50%,-40%);
+        background-color: black;
+        width: 540px;
+        padding-bottom: 40px;
+
+    }
+
+    .tablectrl{
+        font-size: 24px;
+        z-index: 30;
+
+    }
+
+    .pay{
+        position: absolute;
+        left: 25%;
+        transform: translate(-25%,0);
+
+    }
+
+    .cancel{
+        position: absolute;
+        left: 75%;
+        transform: translate(-75%,0);
+        
+    }
 
 /* /result */
 /* ========================================================= */
@@ -384,7 +425,7 @@ div.result.-open{
 
     }
 
-    .booked{
+    .booked , .lightbox{
         width: 100%;
         margin-bottom: 200px;
 
@@ -395,8 +436,6 @@ div.result.-open{
         height: 28px;
 
     }
-
-
 
 }
     
@@ -431,7 +470,7 @@ div.result.-open{
 
     }
 
-    .booked{
+    .booked , .lightbox{
         width: 100%;
         margin-bottom: 200px;
 
@@ -476,7 +515,7 @@ div.result.-open{
 
     }
 
-    .booked{
+    .booked , .lightbox{
         width: 100%;
         margin-bottom: 200px;
 
@@ -490,12 +529,3 @@ div.result.-open{
 
 }
 
-@media screen and (max-width:1200px) and (min-width:991px){
-
-
-}
-
-@media screen and (min-width:1200px){
-
-
-}

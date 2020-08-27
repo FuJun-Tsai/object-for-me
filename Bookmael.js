@@ -1,21 +1,14 @@
 $(document).ready(function(){
+
     // 暫時的
-    Calculation()
+    Calculation() //加總
 
-    // var result = "";
-    // try{
-    //     var refDoc = $(window.opener.document);
+    let screen = $('html').width();
+    if( screen < 768){
 
-    //     var value = $(".bookingbutton",refDoc).val();
+        $('.result').addClass('-open');
 
-    //     if (value != null || typeof value != "undefined")
-    //     result = value;
-
-    // }catch(e){
-    //     result = e.message;
-    // }
-    // $('#date').text(result);
-
+    }
     // 資訊總整方塊
     $('.btn_drawer').click(function(){
 
@@ -43,10 +36,21 @@ $(document).ready(function(){
         <td><span class="price">${ddd}</span></td>
         </tr>`);
 
+
         if( $('.tablectrl').height()>300 ){
             
             $('.tablectrl').css({
                 height: '300px',
+                overflowY : 'scroll',
+
+            });
+
+        }
+
+        if( $('.lightbox .tablectrl').height()>100 ){
+            
+            $('.lightbox .tablectrl').css({
+                height: '150px',
                 overflowY : 'scroll',
 
             });
@@ -75,20 +79,29 @@ $(document).ready(function(){
 
         Calculation()
 
+        minus()
+
     });
     // /新增商品
 
     // 購物車清單
-    $('.minus_table').click(function(){
 
-        $(this).closest('tr').remove();
+    minus()
 
-    });
+    function minus(){
+
+        $('.minus_table').click(function(){
+
+            $(this).closest('tr').remove() ;
+
+        });
+
+    }
 
     $('.plus_table').click(function(){
 
-        // let qua = $(this).closest('.qua').text();
-        // alert(qua);
+        let qua = $(this).closest('.qua').text();
+        alert(qua);
 
     });
 
@@ -104,16 +117,18 @@ $(document).ready(function(){
             total = total + qua * price; 
 
             $('.total span').text(total);
+
         }
+
     }
 
     // /購物車清單
 
     // 資訊傳入
 
-    show()
+    sendin()
 
-    function show () {
+    function sendin() {
      
         //URL
         var url = location.href;
@@ -127,6 +142,7 @@ $(document).ready(function(){
         //一一顯示出來
         for (var i = 0; i < vars.length; i++) {
             $(`.result p:nth-child(${i+2}) span`).text(vars[i]);
+            $(`.lightbox p:nth-child(${i+6}) span`).text(vars[i]);
 
             // alert(i+1);
             //  alert(vars[i]);
@@ -136,20 +152,42 @@ $(document).ready(function(){
 
     // /資訊傳入
 
+    // 結算lightbox
+
+    $('.lightbox').hide();
+    
+    $('.bookingbutton').click(function(){
+
+        $('.lightbox').show();
+
+        $('.linghtback').css('top','0');
+
+    });
+
+    $('.cancel').click(function(){
+
+        $('.lightbox').hide();
+
+        $('.linghtback').css('top','1000px');
+
+    });
+
+    // /結算lightbox
+    
     // 資訊傳送
 
-        $('.bookingbutton').click(function(){
+        // $('.bookingbutton').click(function(){
 
-            let R1 = $('.date').text();
-            let R2 = $('.time').text();
-            let R3 = $('.tables').text();
-            let R4 = $('.mans').text();
-            let R5 = $('.name').text();
-            let R6 = $('.phone').text();
+        //     let R1 = $('.date').text();
+        //     let R2 = $('.time').text();
+        //     let R3 = $('.tables').text();
+        //     let R4 = $('.mans').text();
+        //     let R5 = $('.name').text();
+        //     let R6 = $('.phone').text();
     
-            $(this).closest('a').attr('href',`./Bookresult.html?${R1}&${R2}&${R3}&${R4}&${R5}&${R6}`);
+        //     $(this).closest('a').attr('href',`./Bookresult.html?${R1}&${R2}&${R3}&${R4}&${R5}&${R6}`);
     
-        });
+        // });
     
     // /資訊傳送
 

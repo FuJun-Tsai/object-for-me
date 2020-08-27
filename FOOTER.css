@@ -6,6 +6,7 @@ footer{
     flex-direction: row;
     justify-content: space-between;
     padding: 16px;
+    z-index: 1;
     /* align-items: center; */
     
 }
