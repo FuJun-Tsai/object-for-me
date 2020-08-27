@@ -16,6 +16,9 @@
             
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
             <link rel="stylesheet" href="./fontawesome/css/all.css">
+            <!-- AOS -->
+            <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
         </head>
 
@@ -82,7 +85,7 @@
                 <div class="back">
                     <h5>訂位</h5>
                     
-                    <h2> Step1</h2>
+                    <h2  data-aos="fade-right"  data-aos-offset="0" data-aos-delay="0"> Step1</h2>
                     <div class="daytime">
                         
                         <div> 
@@ -102,7 +105,7 @@
                         </div>
                     </div>
 
-                    <h2> Step2</h2>
+                    <h2  data-aos="fade-right"  data-aos-offset="0" data-aos-delay="300"> Step2</h2>
                     <div class="bookwindow">
                         <div class="Ablock">
                             <button class="A unselect" id="A">A</button>
@@ -175,7 +178,7 @@
 
                     <p class="remark">*灰色底為不可訂位，橘色為使用者選取的位子。</p>
 
-                    <h2> Step3</h2>
+                    <h2  data-aos="fade-right"  data-aos-offset="200" data-aos-delay="100"> Step3</h2>
                     <div class="daytime">
                         <div>
                             <label for="date">姓名：</label>
@@ -231,11 +234,9 @@
 
         <script src="./HEADER.js"></script>
         <script src="./Rerserve.js"></script>
-
         <script>
-
-
-
+            AOS.init();
         </script>
+
 
     </html>

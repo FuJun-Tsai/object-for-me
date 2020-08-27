@@ -15,6 +15,9 @@
             
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
             <link rel="stylesheet" href="./fontawesome/css/all.css">
+            <!-- AOS -->
+            <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
         </head>
 
@@ -126,13 +129,13 @@
                 
                 <h5>表演日程</h5>
                     
-                    <div class="calendar">
+                    <div class="calendar" data-aos="fade-right"  data-aos-offset="40">
 
                         <div class="month">
                             <h6> <span class="turnL"> << </span> July <span class="turnR"> >> </span> </h6>
                         </div>
 
-                        <div class="week">
+                        <div class="week" data-aos="fade-right"  data-aos-offset="40">
                             <div>Sun</div>
                             <div>Mon</div>
                             <div>Tue</div>
@@ -142,7 +145,7 @@
                             <div>Sat</div>
                         </div>
 
-                        <div class="day">
+                        <div class="day" data-aos="fade-right"  data-aos-offset="200" data-aos-delay="100">
                             <div>
                                 <table>
                                     <tr>
@@ -252,7 +255,7 @@
                             </div>
                         </div>
 
-                        <div class="day">
+                        <div class="day" data-aos="fade-right"  data-aos-offset="200" data-aos-delay="100">
                             <div>
                                 <table>
                                     <tr>
@@ -358,7 +361,7 @@
                             </div>
                         </div>
 
-                        <div class="day">
+                        <div class="day" data-aos="fade-right"  data-aos-offset="200" data-aos-delay="100">
                             <div>
                                 <table>
                                     <tr>
@@ -464,7 +467,7 @@
                             </div>
                         </div>
 
-                        <div class="day">
+                        <div class="day" data-aos="fade-right"  data-aos-offset="200" data-aos-delay="100">
                             <div>
                                 <table>
                                     <tr>
@@ -570,7 +573,7 @@
                             </div>
                         </div>
 
-                        <div class="day">
+                        <div class="day" data-aos="fade-right"  data-aos-offset="200" data-aos-delay="100">
                             <div>
                                 <table>
                                     <tr>
@@ -748,5 +751,8 @@
 
         <script src="./HEADER.js"></script>
         <script src="./Calender.js"></script>
+        <script>
+            AOS.init();
+        </script>
 
     </html>
