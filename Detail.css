@@ -93,18 +93,7 @@ body{
 @media screen and (max-width:575px){
 
     .back1 ,.back2{
-        background-position: 50% 0%;
-
-    }
-
-    .back1 ,.back2{
         background-image: none;
-
-    }
-
-    body{
-        /* position: fixed; */
-        /* background-repeat: no-repeat; */
 
     }
 
@@ -137,6 +126,11 @@ body{
     .singer .text , .singer_reverse .text{
         width: 100%;
         
+    }
+
+    .back1 .text{
+        background-color: hsla(0,0%,0%,.5);
+
     }
 
     .engname{

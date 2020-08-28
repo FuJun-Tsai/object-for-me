@@ -63,6 +63,7 @@ option{
 .unselect{
     color: hsla(0, 0%, 0%, .7);
     background-color: hsla(0, 0%, 30%, 1);
+    z-index: 0;
 
 }
 
@@ -403,6 +404,10 @@ select ,input[type="text"] ,input[type="date"] {
     h5{
         padding: 20px;
 
+    }
+
+    label{
+        padding-left: 20px;
     }
 
     .daytime{

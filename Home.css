@@ -58,6 +58,11 @@ body{
 
 }
 
+.singer_list img{
+    margin-bottom: 20px;
+
+}
+
 .singer_text{
     position: relative;
     background-color: hsla(0,0%,0%,.7);
@@ -90,6 +95,11 @@ body{
     align-items: center;
     font-size: 0;
 
+}
+
+.band_detail img{
+    margin-bottom: 20px;
+    
 }
 
 .band_text{
@@ -132,6 +142,11 @@ body{
 
 }
 
+.drink img{
+    border-radius: 24px;
+
+}
+
 .drink_detail{
     position: relative;
     display: flex;
@@ -140,6 +155,10 @@ body{
     font-size: 0;
     width: 100%;
 
+}
+
+.drink_detail img{
+    margin-bottom: 20px;
 
 }
 
@@ -149,7 +168,7 @@ body{
     flex-direction: column;
     width: 75%;
     padding: 16px;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
     background-color: hsla(0,0%,0%,.7);
     border-radius: 24px;
 
@@ -173,6 +192,11 @@ body{
 
 }
 
+.food img{
+    border-radius: 24px;
+
+}
+
 .food_detail{
     position: relative;
     display: flex;
@@ -180,6 +204,11 @@ body{
     align-items: center;
     font-size: 0;
     width: 100%;
+
+}
+
+.food_detail img{
+    margin-bottom: 20px;
 
 }
 
@@ -218,6 +247,36 @@ section{
 
 
 }
+
+button:after,
+button:before {
+    display: block;
+    background: #FFB366;
+    width: 0;
+    height: 200px;
+    content: "";
+    position: absolute;
+    transition: all 500ms;
+    z-index: -1;
+
+}
+
+button:after {
+    bottom: 0px;
+    left: 0px;
+    
+}
+
+button:before {
+    top: 0px;
+    right: 0px;
+}
+
+button:hover:after,
+button:hover:before{
+    width: 100%;
+    
+}
 /* /動畫 */
 
 @media screen and (max-width:575px){
@@ -247,7 +306,8 @@ section{
 
     .show{
         width: 100%;
-        
+        padding: 0;
+
     }
 
     .singer{
@@ -279,6 +339,7 @@ section{
 
     .meal_back{
         background-image: none;
+        padding-bottom: 0;
         /* background-position: center;
         background-repeat: no-repeat; */
 
@@ -637,7 +698,7 @@ section{
     .singer_text{
         transform: translate(0,-100%);
         opacity: 0;
-        z-index: -1;
+        z-index: 1;
         transition-duration: .5s;
 
     }
@@ -666,7 +727,7 @@ section{
 
     .band_text{
         transform: translate(0,-100%);
-        z-index: -1;
+        z-index: 1;
         opacity: 0;
         transition-duration: .5s;
 
@@ -679,7 +740,7 @@ section{
     }
 
     .band:hover{
-        height: 800px;
+        height: 850px;
 
     }
 

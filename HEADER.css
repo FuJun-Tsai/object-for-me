@@ -82,12 +82,16 @@ P{
 }
 
 button , input{
+    position: relative;
     border-radius: 8px;
     font-size: 24px;
     padding: 0px 20px ;
     color:hsla(0,53.4%,22.7%,1);
     background-color: hsla(28,25.5%,80%,1);
-    font-weight: bold;    
+    font-weight: bold;   
+
+    z-index: 1;
+    overflow: hidden;
 
 }
 
@@ -243,11 +247,21 @@ a{
 
 }
 
+
+
 /* /導覽列主次標 */
+
+
 @media screen and (max-width:575px){
 
     h1,h2,h3,h4,h5,h6{
-        padding:20px
+        padding:20px;
+
+    }
+
+    h3,h4{
+        padding-top: 0px;
+        padding-bottom: 0px;
 
     }
     
