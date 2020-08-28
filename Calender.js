@@ -15,7 +15,6 @@ $(document).ready(function(){
 
     let ban = $('.banctrl>div').length;
     let winwid = $(window).width();
-
     // ('.banctrl>div').length;
 
     for( i=0 ; i<ban ;i+=1){
@@ -28,6 +27,7 @@ $(document).ready(function(){
     $('.ctrlban li:nth-child(1)').addClass('lifocus');
 
     $('.ctrlban li').click(function(){
+        clearInterval(bannerMoveAuto); 
         $(this).addClass('lifocus');
         $('.ctrlban li').not(this).removeClass('lifocus');
         let index = $(this).index()*-100;
@@ -36,10 +36,33 @@ $(document).ready(function(){
             left: `${index}vw` ,
 
         });
+    
 
     });
     
     $('.ctrlban li').addClass('liblur');
+
+    let Mi = 0;
+    function bannerMoveAuto(){ 
+        let ani = Mi*-100;
+        console.log(Mi);
+        if(Mi>ban-2){
+            Mi=0;
+        }else{
+            Mi+=1;
+        }
+
+        $('.banctrl').animate({
+            left: `${ani}vw` ,
+        });
+
+        $('.ctrlban li').removeClass('lifocus');
+        $(`.ctrlban li:nth(${Mi-1})`).addClass('lifocus');
+
+    }
+    //重複執行某個方法 
+    var bannerMoveAuto = setInterval(bannerMoveAuto,1000); 
+
 
     if ( $('html').width() < 1200){
         

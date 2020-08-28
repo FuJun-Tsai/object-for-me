@@ -27,6 +27,9 @@ $(document).ready(function(){
         let ccc = $(this).closest('.item').find('p').html(); //
         let ddd = $(this).closest('.item').find('span').html();
 
+        i+=1;
+        console.log(parseInt(i));
+
         $('table').append(`<tr>
         <td class="bookedname">${ccc}</td>
         <td>
@@ -90,9 +93,7 @@ $(document).ready(function(){
 
     // 購物車清單
 
-    minus()
 
-    plus()
 
     Calculation()
 
@@ -103,79 +104,51 @@ $(document).ready(function(){
             if(qua>1){
                  qua-=1;
                 $(this).closest('td').find('.qua').text(qua);
+                Calculation()
 
             }else{
                 $(this).closest('tr').remove(); 
+                Calculation()
 
             }
-            
+            Calculation()
         });
 
     }
 
     function plus(){
 
-        $('.plus_table').click(function(){
+        let i = ($(this).closest('tr').index()+1);
 
-            let qua = parseInt($(this).parent().find('.qua').text());
+        $(`.plus_table`).click(function(){
+            let qua = parseInt($(this).parent().find(`.qua`).text());
             qua+=1;
-            $(this).closest('td').find('.qua').text(qua);
-            
-        });
+            $(this).parent().find(`.qua`).text(qua);
+            Calculation();
 
+        });
 
     }
 
     function Calculation(){
+        let total = 0; 
+
         let xxx = $('#end tr').length;
         for( i=0 ; i<xxx ; i+=1){
             let qua ;
-            let total = 0; 
             let price;
 
+            
             qua = parseInt($(`#end tr:nth(${i}) .qua`).text());
-            price = parseInt($(`#end tr:nth(${i}) .price`).text());
+            price = parseInt($(`#end tr:nth(${i}) .price`).text().split('$')[1]);
             total = total + qua * price; 
-            // alert(price);
-
-
             $('.total span').text(total);
 
         }
 
     }
 
-    
-
     // /購物車清單
-
-    // 資訊傳入
-
-    sendin()
-
-    function sendin() {
-     
-        //URL
-        var url = location.href;
-        
-        //取得問號之後的值
-        var temp = url.split("?");
-    
-        //將值再度分開
-        var vars = temp[1].split("&");
-        // alert(vars);
-        //一一顯示出來
-        for (var i = 0; i < vars.length; i++) {
-            $(`.result p:nth-child(${i+2}) span`).text(vars[i]);
-            $(`.lightbox p:nth-child(${i+6}) span`).text(vars[i]);
-
-            // alert(i+1);
-            //  alert(vars[i]);
-        };
-    
-    }
-
-    // /資訊傳入
 
     // 結算lightbox
 
@@ -200,6 +173,36 @@ $(document).ready(function(){
     });
 
     // /結算lightbox
+    
+    // 資訊傳入
+
+    sendin()
+
+    function sendin() {
+     
+        //URL
+        var url = location.href;
+        
+        //取得問號之後的值
+        var temp = url.split("?");
+        //將值再度分開
+        var vars = temp[1].split("&");
+        // alert(vars);
+        //一一顯示出來
+        
+
+        for (var i = 0; i < vars.length; i++) {
+            $(`.result p:nth-child(${i+2}) span`).text(vars[i]);
+            $(`.lightbox p:nth-child(${i+6}) span`).text(vars[i]);
+
+            // alert(i+1);
+            //  alert(vars[i]);
+        };
+    
+    }
+
+    // /資訊傳入
+
     
     // 資訊傳送
 
