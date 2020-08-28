@@ -157,8 +157,8 @@ body{
 
 .drink_text button{
     position: absolute;
-    right: 4px;
-    bottom: 4px;
+    right: 16px;
+    bottom: 16px;
 
 }
 
@@ -197,8 +197,8 @@ body{
 
 .food_text button{
     position: absolute;
-    right: 4px;
-    bottom: 4px;
+    right: 16px;
+    bottom: 16px;
 
 }
 

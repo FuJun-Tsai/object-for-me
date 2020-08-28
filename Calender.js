@@ -61,7 +61,7 @@ $(document).ready(function(){
 
     }
     //重複執行某個方法 
-    var bannerMoveAuto = setInterval(bannerMoveAuto,1000); 
+    var bannerMoveAuto = setInterval(bannerMoveAuto,2000); 
 
 
     if ( $('html').width() < 1200){
