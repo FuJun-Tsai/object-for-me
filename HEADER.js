@@ -35,3 +35,19 @@ $(document).ready(function(){
 });
 
 
+
+TweenMax.to('.box1' , 1 ,{
+    x:1000,
+    y:-1000,
+    rotation:0,
+
+})
+TweenMax.to('.box3' , 1 ,{
+    x:-1000,
+    y:1000,
+    rotation:0,
+
+})
+
+
+

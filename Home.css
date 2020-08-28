@@ -12,6 +12,7 @@ body{
     height: 100vh;
     background-position: 0 100px;
     background-attachment: fixed;
+    z-index: -1;
 
 }
 
