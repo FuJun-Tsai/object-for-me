@@ -497,7 +497,7 @@ button:hover:before{
     .banner{
         background-size: contain;
         background-repeat: no-repeat;
-        height: 420px;
+
     }
 
     .show{
@@ -682,6 +682,12 @@ button:hover:before{
         left: 10%;
         transform: translate(-10%,-50%);
     
+    }
+
+    .banner{
+        /* background-size: contain; */
+        background-repeat: no-repeat;
+
     }
     
     .singer{

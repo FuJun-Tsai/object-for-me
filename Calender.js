@@ -79,7 +79,9 @@ $(document).ready(function(){
             // alert(calindex);
             let week = 0;
 
-            $(`.day`).not(`.day:nth(${week})`).addClass('hide');
+            $(`.day`).not(`.day:nth(${week})`).animate({
+                'opacity':'0',
+            }).addClass('hide');
 
             $('.turnL').on('click',function(){
                 calchange('prev');
@@ -110,9 +112,13 @@ $(document).ready(function(){
                 }
                 
                 
-                $(`.day:nth(${week})`).removeClass('hide');
-                $(`.day`).not(`.day:nth(${week})`).addClass('hide');
-                
+                $(`.day:nth(${week})`).animate({
+                    'opacity':'1',
+                }).removeClass('hide');
+
+                $(`.day`).not(`.day:nth(${week})`).animate({
+                    'opacity':'0',
+                }).addClass('hide');
                 
             }
 

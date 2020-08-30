@@ -23,7 +23,7 @@ h4{
     background-attachment: fixed;
     /* margin-bottom: 100px; */
     padding-top: 100px;
-
+    overflow: hidden;
 }
 
 .banner2{
@@ -32,6 +32,7 @@ h4{
     position: relative;
     background-attachment: fixed;
     padding-top: 100px;
+    overflow: hidden;
 
 }
 
@@ -41,6 +42,7 @@ h4{
     position: relative;
     background-attachment: fixed;
     padding-top: 100px;
+    overflow: hidden;
 
 }
 
@@ -50,6 +52,7 @@ h4{
     position: relative;
     background-attachment: fixed;
     padding-top: 100px;
+    overflow: hidden;
 
 }
 
@@ -81,7 +84,6 @@ h4{
 
 .buttonlayout p{
     font-size: 24px;
-    text-indent: 48px;
     width: 750px;
     line-height: 96px;
     margin-right: 40px;
@@ -153,12 +155,13 @@ h4{
     }
 
     .banner1{
-        height: 80vh;
+        height: 100vh;
+        
     }
 
     .banner2,.banner3,.banner4{
-        height: 60vh;
-        
+        height: 80vh;
+
     }
 
     .textlayout{
@@ -195,14 +198,14 @@ h4{
         background-position: 75%,0;
         
     }
-
     .banner1{
-        height: 80vh;
+        height: 100vh;
+        
     }
 
     .banner2,.banner3,.banner4{
-        height: 60vh;
-        
+        height: 80vh;
+
     }
 
     .textlayout{
