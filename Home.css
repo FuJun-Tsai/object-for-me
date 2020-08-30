@@ -13,6 +13,7 @@ body{
     background-position: 0 100px;
     background-attachment: fixed;
     z-index: -1;
+    overflow: hidden;
 
 }
 
@@ -38,7 +39,8 @@ body{
     width: 1200px;
     margin: 0 auto;
     padding-bottom: 100px;
-    
+    overflow: hidden;
+
 }
 
 /* singer */
@@ -87,6 +89,7 @@ body{
 .band{
     display: flex;
     flex-direction: row;
+    overflow: hidden;
 
 }
 
@@ -140,6 +143,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    overflow: hidden;
 
 }
 
@@ -190,6 +194,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    overflow: hidden;
 
 }
 
@@ -236,18 +241,7 @@ body{
 
 /* 動畫 */
 
-section{
-    position: fixed;
-    height: 100vh;
 
-}
-
-
-.scoll{
-    display: inline-block;
-
-
-}
 
 button:after,
 button:before {

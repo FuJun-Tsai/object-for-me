@@ -17,6 +17,18 @@ $(document).ready(function(){
 
 });
 
+obj = new SplitText($('.maintitle a'),{type: "chars"});
+
+TweenMax.staggerFrom(obj.chars, .8, {
+    opacity:0, 
+    scale:0 ,
+    y:80, 
+    rotationX:180 ,
+    transformOrigin:"0% 50% -50%" ,
+    ease:Back.easeOut},
+        0.01, 0.85);
+
+
 // if($(window).width()<576){
 //     var controller = new ScrollMagic.Controller();
 //     var tlscroll =  new TimelineMax();
@@ -83,7 +95,9 @@ if ($(window).width() < 1201){
         reverse : true, // 動畫返回 true/不返回false
         offset : 100,  // 改變start觸發點
         duration : 0 //距離
-    }).setTween(tlscrollcolde).addIndicators().addTo(controllercolde);
+    }).setTween(tlscrollcolde).addTo(controllercolde)
+    //.addIndicators()
+    ;
 
     // -------------------------------------------------
 
@@ -134,7 +148,9 @@ if ($(window).width() < 1201){
         reverse : true, // 動畫返回 true/不返回false
         offset : 100,  // 改變start觸發點
         duration : 0 //距離
-    }).setTween(tlscrollniaws).addIndicators().addTo(controllerniaws);
+    }).setTween(tlscrollniaws).addTo(controllerniaws)
+    //.addIndicators()
+    ;
 
         // -------------------------------------------------
 
@@ -184,7 +200,9 @@ if ($(window).width() < 1201){
             reverse : true, // 動畫返回 true/不返回false
             offset : 100,  // 改變start觸發點
             duration : 0 //距離
-        }).setTween(tlscrollLee).addIndicators().addTo(controllerLee);
+        }).setTween(tlscrollLee).addTo(controllerLee)
+        //.addIndicators()
+        ;
 
         // -------------------------------------------------
 
@@ -235,7 +253,9 @@ if ($(window).width() < 1201){
             reverse : true, // 動畫返回 true/不返回false
             offset : 100,  // 改變start觸發點
             duration : 0 //距離
-        }).setTween(tlscrollband1).addIndicators().addTo(controllerband1);
+        }).setTween(tlscrollband1).addTo(controllerband1)
+        //.addIndicators()
+        ;
         
             // -------------------------------------------------
 
@@ -286,7 +306,9 @@ if ($(window).width() < 1201){
                 reverse : true, // 動畫返回 true/不返回false
                 offset : 100,  // 改變start觸發點
                 duration : 0 //距離
-            }).setTween(tlscrollband2).addIndicators().addTo(controllerband2);
+            }).setTween(tlscrollband2).addTo(controllerband2)
+            //.addIndicators()
+            ;
 
             // -------------------------------------------------
 
@@ -318,7 +340,9 @@ if ($(window).width() < 1201){
                 reverse : true, // 動畫返回 true/不返回false
                 offset : 100,  // 改變start觸發點
                 duration : 0 //距離
-            }).setTween(tlscrolldrink1).addIndicators().addTo(controllerdrink1);
+            }).setTween(tlscrolldrink1).addTo(controllerdrink1)
+            //.addIndicators()
+            ;
 
             // -------------------------------------------------
 
@@ -350,7 +374,9 @@ if ($(window).width() < 1201){
                 reverse : true, // 動畫返回 true/不返回false
                 offset : 100,  // 改變start觸發點
                 duration : 0 //距離
-            }).setTween(tlscrolldrink2).addIndicators().addTo(controllerdrink2);
+            }).setTween(tlscrolldrink2).addTo(controllerdrink2)
+            //.addIndicators()
+            ;
 
             // -------------------------------------------------
 
@@ -382,7 +408,9 @@ if ($(window).width() < 1201){
                 reverse : true, // 動畫返回 true/不返回false
                 offset : 100,  // 改變start觸發點
                 duration : 0 //距離
-            }).setTween(tlscrolldrink3).addIndicators().addTo(controllerdrink3);
+            }).setTween(tlscrolldrink3).addTo(controllerdrink3)
+            //.addIndicators()
+            ;
 
             // -------------------------------------------------
 
@@ -414,7 +442,9 @@ if ($(window).width() < 1201){
                 reverse : true, // 動畫返回 true/不返回false
                 offset : 100,  // 改變start觸發點
                 duration : 0 //距離
-            }).setTween(tlscrollfood1).addIndicators().addTo(controllerfood1);
+            }).setTween(tlscrollfood1).addTo(controllerfood1)
+            //.addIndicators()
+            ;
 
             // -------------------------------------------------
 
@@ -446,5 +476,8 @@ if ($(window).width() < 1201){
                 reverse : true, // 動畫返回 true/不返回false
                 offset : 100,  // 改變start觸發點
                 duration : 0 //距離
-            }).setTween(tlscrollfood2).addIndicators().addTo(controllerfood2);
+            }).setTween(tlscrollfood2).addTo(controllerfood2)
+            //.addIndicators()
+            ;
+            
 }

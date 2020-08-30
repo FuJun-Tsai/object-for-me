@@ -39,7 +39,9 @@ var scense01 = new ScrollMagic.Scene({
     reverse : true, // 動畫返回 true/不返回false
     offset : 100,  // 改變start觸發點
     duration : 0 //距離
-}).setTween(trlscrollA1).addIndicators().addTo(controllerA1);
+}).setTween(trlscrollA1).addTo(controllerA1)
+//.addIndicators()
+;
 
 // --------------------------------
 
@@ -84,7 +86,9 @@ var scense02 = new ScrollMagic.Scene({
     reverse : true, // 動畫返回 true/不返回false
     offset : 100,  // 改變start觸發點
     duration : 0 //距離
-}).setTween(trlscrollA2).addIndicators().addTo(controllerA2);
+}).setTween(trlscrollA2).addTo(controllerA2)
+//.addIndicators()
+;
 
 // --------------------------------
 
@@ -129,7 +133,9 @@ var scense03 = new ScrollMagic.Scene({
     reverse : true, // 動畫返回 true/不返回false
     offset : 100,  // 改變start觸發點
     duration : 0 //距離
-}).setTween(trlscrollA3).addIndicators().addTo(controllerA3);
+}).setTween(trlscrollA3).addTo(controllerA3)
+//.addIndicators()
+;
 
 // --------------------------------
 
@@ -174,6 +180,8 @@ var scense04 = new ScrollMagic.Scene({
     reverse : true, // 動畫返回 true/不返回false
     offset : 100,  // 改變start觸發點
     duration : 0 //距離
-}).setTween(trlscrollA4).addIndicators().addTo(controllerA4);
+}).setTween(trlscrollA4).addTo(controllerA4)
+//.addIndicators()
+;
 
 // --------------------------------
