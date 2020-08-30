@@ -326,6 +326,7 @@ select ,input[type="text"] ,input[type="date"] {
         transform: translate(0%,-50%);
         transition-duration: .5s;
         border-radius: 8px 0 0 8px;
+        z-index: 30;
 
     }
 

@@ -3,7 +3,9 @@ $(document).ready(function(){
     banresize()
 
     $(window).resize(function(){
+
         banresize()
+
     });
 
     function banresize(){
@@ -74,7 +76,7 @@ $(document).ready(function(){
 
         let planteggheight = $('html').width() * 1000 / 1920 ;
         $('.EggPlantEgg').css('height',planteggheight);
-
+        
             // let calindex = $('.day:nth(1) .showname').length; 
             // alert(calindex);
             let week = 0;
@@ -123,7 +125,5 @@ $(document).ready(function(){
             }
 
     }
-
-
 
 });

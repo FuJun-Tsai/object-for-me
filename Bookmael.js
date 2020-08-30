@@ -222,3 +222,109 @@ $(document).ready(function(){
     // /資訊傳送
 
 });
+
+console.log($('.item').length);
+
+var item = new TimelineMax();
+
+item.from(`.drink .item:nth-child(3)` , 1 ,{
+    x:-300,
+    alpha:0,
+    ease: 
+    Elastic.
+    easeOut.config(
+        1, 
+        0.5)
+    },0);
+
+item.from(`.drink .item:nth-child(4)` , 1 ,{
+    x:-300,
+    alpha:0,
+    ease: 
+    Elastic.
+    easeOut.config(
+        1, 
+        0.5)
+    },0.15);
+
+item.from(`.drink .item:nth-child(5)` , 1 ,{
+    x:-300,
+    alpha:0,
+    ease: 
+    Elastic.
+    easeOut.config(
+        1, 
+        0.5)
+    },0.3);
+
+item.from(`.drink .item:nth-child(6)` , 1 ,{
+    x:-300,
+    alpha:0,
+    ease: 
+    Elastic.
+    easeOut.config(
+        1, 
+        0.5)
+    },0.45);
+
+item.from(`.drink .item:nth-child(7)` , 1 ,{
+    x:-300,
+    alpha:0,
+    ease: 
+    Elastic.
+    easeOut.config(
+        1, 
+        0.5)
+    },0.6);
+
+item.from(`.drink .item:nth-child(8)` , 1 ,{
+    x:-300,
+    alpha:0,
+    ease: 
+    Elastic.
+    easeOut.config(
+        1, 
+        0.5)
+    },0.75);
+
+item.from(`.drink .item:nth-child(9)` , 1 ,{
+    x:-300,
+    alpha:0,
+    ease: 
+    Elastic.
+    easeOut.config(
+        1, 
+        0.5)
+    },0.9);
+
+item.from(`.drink .item:nth-child(10)` , 1 ,{
+    x:-300,
+    alpha:0,
+    ease: 
+    Elastic.
+    easeOut.config(
+        1, 
+        0.5)
+    },1.05);
+
+item.from(`.drink .item:nth-child(11)` , 1 ,{
+    x:-300,
+    alpha:0,
+    ease: 
+    Elastic.
+    easeOut.config(
+        1, 
+        0.5)
+    },1.2);
+
+item.from(`.drink .item:nth-child(12)` , 1 ,{
+    x:-300,
+    alpha:0,
+    ease: 
+    Elastic.
+    easeOut.config(
+        1, 
+        0.5)
+    },1.35);
+
+    

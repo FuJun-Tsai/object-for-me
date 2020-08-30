@@ -12,6 +12,7 @@ body{
 
 .back{
     padding-top: 100px;
+    overflow: hidden;
 
 }
 
@@ -24,8 +25,21 @@ h2{
 
 nav{
     color: #F6B352;
-    width: 100%;
     
+    animation-name: nav;
+    animation-duration: 1.75s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.15,1,1,1)
+}
+
+@keyframes nav {
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 100%;
+    }
 }
 
 .content{
