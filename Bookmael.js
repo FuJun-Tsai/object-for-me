@@ -189,7 +189,7 @@ $(document).ready(function(){
         var vars = temp[1].split("&");
         // alert(vars);
         //一一顯示出來
-        
+        vars[4] = decodeURI(vars[4]);
 
         for (var i = 0; i < vars.length; i++) {
             $(`.result p:nth-child(${i+2}) span`).text(vars[i]);
@@ -223,7 +223,6 @@ $(document).ready(function(){
 
 });
 
-console.log($('.item').length);
 
 var item = new TimelineMax();
 
